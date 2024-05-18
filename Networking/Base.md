@@ -59,4 +59,14 @@ This whole process is known as the encapsulation . As the data is sent from the 
  - TCP is the connection based protocol which means that you must established the connection before you send data via `tcp`.The process of forming this connection is called thress-way handshake .
   - Method to establish the connection 
  First your computer will send the syn bit then server will respond with the acl and finally your system will send the packet that contains the ACK bit itself .
+
+ # Ping 
+
+ The ping command is used when we want to test whether a connection to a remote resource is possible
+ . Ping works using the ICMP protocol, which is one of the slightly less well-known TCP/IP protocols that were mentioned earlier. The ICMP protocol works on the Network layer of the OSI Model, and thus the Internet layer of the TCP/IP model. 
+
+
+ # HTTP(S)
+ HTTP is the set of rules used for the communicating with web servers for the transmitting of webpage data .
+ HTTPS is the secure version of HTTP.HTTPS is the is encrypted so it not only stops people from seeing the data you are receiveing and sending ,but it also gives you assurence that you are taking to the correct web server and not something impersonating it  .
  
