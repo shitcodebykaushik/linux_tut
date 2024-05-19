@@ -180,3 +180,6 @@ There are two types of cryptography :
 # Develop project related to the hash generator .
 
 
+# Google Dorking 
+Crawlers discover content through various means it acts as a virus and look for the data on thee internet .
+
