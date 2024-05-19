@@ -70,3 +70,70 @@ This whole process is known as the encapsulation . As the data is sent from the 
  HTTP is the set of rules used for the communicating with web servers for the transmitting of webpage data .
  HTTPS is the secure version of HTTP.HTTPS is the is encrypted so it not only stops people from seeing the data you are receiveing and sending ,but it also gives you assurence that you are taking to the correct web server and not something impersonating it  .
  
+ - Request and Response 
+ To access the assest we make request to the web browaer .
+ -  A `URL` id predominantly an instruction on how to access a resource on the internet,
+ - The URL goes in these sequence -> `Scheme://User@Gost//Domain:Port//Path?=//Query String // Fragments ` .
+ Scheme: This instructs on what protocol to use for accessing the resource such as   - HTTP, HTTPS, FTP (File Transfer Protocol).
+
+  - User: Some services require authentication to log in, you can put a username and
+  - password into the URL to log in.
+
+  - Host: The domain name or IP address of the server you wish to access.
+
+  - Port: The Port that you are going to connect to, usually 80 for HTTP and 443 for   
+  -  HTTPS, but this can be hosted on any port between 1 - 65535.
+
+  - Path: The file name or location of the resource you are trying to access.
+
+  
+  - Query String: Extra bits of information that can be sent to the requested path. For example, /blog?id=1 would tell the blog path that you wish to receive the blog article with the id of 1.
+
+- Fragment: This is a reference to a location on the actual page requested. This is commonly used for pages with long content and can have a certain part of the page directly linked to it, so it is viewable to the user as soon as they access the page.
+
+Making request with the one line is also possible .
+ `GET/HTTP/1.1` The request method/The HTTP Protocol Versions .
+
+ - Content-Length: When sending data to a web server such as in a form, the content length tells the web server how much data to expect in the web request .
+
+ - HTTP methods are a way for the client to show their intended action when making an HTTP request. There are a lot of HTTP methods but we'll cover the most common ones, although mostly you'll deal with the GET and POST method.
+
+- GET Request This is used for getting information from a web server.
+
+- POST Request This is used for submitting data to the web server and potentially creating new records
+
+- PUT Request This is used for submitting data to a web server to update information
+
+- DELETE Request This is used for deleting information/records from a web server.
+
+
+- HTTPS Status code 
+  - 100-199 -> It means that the request are accepted keep sendig the next part.
+  - 200-299 -> It means that the client request was the suceesful .
+  - 300-399 -> It means that the client request wad redirected to the other resource .
+  - 400-499 -> It means that the client request contains some error .
+  - 500-599 -> This means that the error is from the server side .
+  - 200 -OK
+  - 201 - Created
+  - 301 - Moved Permanently 
+  - 302  -Found
+  - 400  - Bad Request 
+  - 401 - Not Authorised
+  - 403 - Forbidden
+  - 405 - Method Not Allowed
+  - 404 - Page not found 
+  - 500 - Internal service error 
+  - 503 - Service Unavailable 
+- Headers 
+Headers are additional bits of data you can send to the web server when making requests.
+ There are the two different type of the headers 
+  - Request Headers
+    - Cookie: Data sent to the server to help to remeber your information.
+    - Host : Some web server host multiple website so by provideing the name you can tell it which one you require ,else you will recevive the defualt one .
+
+  - Response Headers 
+    - Cache control It means that how long to store the content of the response in the browser cache befor ot request it again .
+ 
+
+- HTTP is stateless means that it doesnt keep track of your previous request .
+- SET-COOKIES are used to save cookies to your computer .
