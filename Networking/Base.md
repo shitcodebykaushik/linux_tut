@@ -137,3 +137,31 @@ Headers are additional bits of data you can send to the web server when making r
 
 - HTTP is stateless means that it doesnt keep track of your previous request .
 - SET-COOKIES are used to save cookies to your computer .
+
+# DNS
+Domain Name System   is the protocol responsible for resolving hostnames, such as tryhackme.com, to their respective IP addresses .
+ - Domain Hierarchy
+    - TLD (Top-Level Domain) A TLD is the most righthand part of a domain name.
+      There are two types of the TLD ,gTLD (Generic Top Level) ,ccTLD (Country code Top level Domain)
+      -  .com would be for commercial purposes
+- Second-Level Domain
+ When registering a domain name, the second-level domain is limited to 63 characters + the TLD and can only use a-z 0-9 and hyphens (cannot start or end with hyphens or have consecutive hyphens).
+ -  And a full domain name can have a maximum of 253 characters.
+
+ - DNS record Types
+    - A Record These records resolve to IPv4 addresses, for example 104.26.10.229
+    - AAAA Record  These records resolve to IPv6 addresses, for example 2606:4700:20::681a:be5 .
+    - CNAME Record These records resolve to another domain name.
+    - MX Record These records resolve to the address of the servers that handle the email for the domain you are querying,
+    - TXT records are free text fields where any text-based data can be stored. 
+
+- TTL is use to specifies how long a DNS record should be cached for .
+
+- A Recursive DNS Server is usually provided by your ISP, but you can also choose your own. This server also has a local cache of recently looked up domain names. If a result is found locally, this is sent back to your computer, and your request ends here (this is common for popular and heavily requested services such as Google, Facebook, Twitter). If the request cannot be found locally, a journey begins to find the correct answer, starting with the internet's root DNS servers.
+
+- The TLD server holds records for where to find the authoritative server to answer the DNS request. The authoritative server is often also known as the nameserver for the domain. 
+
+- An authoritative DNS server is the server that is responsible for storing the DNS records for a particular domain name and where any updates to your domain name DNS records would be made. Depending on the record type, the DNS record is then sent back to the Recursive DNS Server, where a local copy will be cached for future requests and then relayed back to the original client that made the request. DNS records all come with a TTL (Time To Live) value. This value is a number represented in seconds that the response should be saved for locally until you have to look it up again. Caching saves on having to make a DNS request every time you communicate with a server.
+
+
+
