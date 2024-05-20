@@ -183,3 +183,7 @@ There are two types of cryptography :
 # Google Dorking 
 Crawlers discover content through various means it acts as a virus and look for the data on thee internet .
 
+# tmux
+ - Tmux this will launch the tmux session in the system .
+ - tmux (short for terminal multiplexer) is a powerful tool that allows you to manage multiple terminal sessions from a single window. It is particularly useful for those who work extensively on the command line, such as system administrators and developers. With tmux, you can create, manage, and navigate between multiple terminal sessions easily.
+ 
