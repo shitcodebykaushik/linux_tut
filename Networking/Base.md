@@ -265,7 +265,43 @@ The truth is that only the tip of the iceberg we are writing in our dev-environe
     - `SAST` This stand for the Static Appliction Security Testing . works by reviewing the source code of the application or service to identify sources of vulnerabilities.This can be integrated in pipeline as the security gates,preventing the pipline from continuing if the SAST tool still detects vulnerbilities that have not been flagged as false positive .
     - `DAST`  Dynamic Application Security Testing (DAST) is similar to SAST but performs dynamic testing by executing the code. This allows DAST tools to detect additional vulnerabilities that would not be possible with just a source code review. 
     - Penetration Testing is bap of all these test case  as it manual testing which are so crucial for large production stuff .
-    
+
+- Continous Integration and Delivery
+Initially CI/CD  was called continous integration and development as the part of the Agile method but the deploymet was done using the WaterFall method .But these things have changed in the recent year . Now industry say that it is fully based on AGILE method called CI/CD as continous Integration and Continous Delivery .
+  
+
+- When we build new features  for our system or service we ensure that these features will work with the cureent application .
+Insted of adding this in the last  development cycle we can now continously integrte new fetures and test them as they are being deloped .
+- There are few distinct elements that are the part of the each CI/CD .
+Starting Trigger - The action that kicks off the pipeline process. For example, a push request is made to a specific branch.
+- Building Actions - Actions taken to build both the project and the new feature.
+- Testing Actions - Actions that will test the project to ensure that the new feature does not interfere with any of the current features of the application.
+- Deployment Actions - Should a pipeline succeed, the deployment actions detail what should happen with the build. For example, it should then be pushed to the Testing Environment.
+- Delivery Actions - As CI/CD processes have evolved, the focus is now no longer just on the deployment itself, but all aspects of the delivery of the solution. This includes actions such as monitoring the deployed solution.
+
+These are the part where the larget automation happens .
+- Dev means development 
+- Prod means production
+- build orchestrators control the builds 
+-  build agent it is the build infrastructure elemnts that performs the build .
+
+- Each pipeline have the several environement and each of them have their specific use case .
+- `Dev Development` This is the playground for developers ,this is the most unstable as developers are continously pushing code .This is wealed zone .
+- ` UAT` This means User Acceptance Testing it is use to test the application before it is sent for the production . This is the second weakest zone .
+- ` PreProd - Pre-Production ` This is the most senstive zone here ther is no need to update any change in the system . It may containe the customer data .
+- ` DR/HR` . This is often used for critical applications such as Online Banking, where the bank has to pay large penalties if the website goes down. In the event where some (but still small) downtime is allowed, the environment is called a DR environment, meant to be used to recover from a disaster in production. DR and HA environments should be exact mirrors of PROD in both stability and security.
+- Developer Bypasses is a common class of vulnerabilities that is discovered in PROD due to insecure code creeping in from DEV.
+ - A staging environment mimics the production environment to perform final QA checks on application. A test environment validates each component of application under test. It is dynamic and requires specific configurations to test each component.
+
+ 
 
 
-     
+
+
+
+
+
+
+
+
+
