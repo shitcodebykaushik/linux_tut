@@ -1,4 +1,11 @@
 # Day 1
+
+- Port scanner is software application program that scans a server or network for the open ports .
+- Port 20 (UDP) — File Transfer Protocol (FTP) for data transfer
+- Port 22 (TCP) — Secure Shell (SSH) protocol for secure logins, FTP, and port forwarding
+- Port 23 (TCP) — Telnet protocol for unencrypted text commutations
+- Port 53 (UDP) — Domain Name System (DNS) translates names of all computers on internet-to-IP addresses
+- Port 80 (TCP) — World Wide Web HTTP
  The OSI model is use to demonstrate the theory behind the computer networking .
  In practise it more compact TCP/IP model that the real worls is based on .
   The osi model consist os the following parts .
