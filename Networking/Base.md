@@ -229,3 +229,43 @@ Crawlers discover content through various means it acts as a virus and look for 
 - Oreos open -source .tmux.conf file 
 
 
+# PwnTools 
+It is designed for the rapid prototyping and development and intented to make exploit writing as simple as possible .
+Pwndgb printsout the usefull information such as registers and assembly code with each brealpoint or error.
+- GDB plugging makes GDB suck less.
+
+# Pipleine 
+In the pipeline our end product is deployed at the Environement .
+- Source code and version control is the start of our pipleine .
+- Furthermore, we often want to keep several versions of our code since we are continuously making improvements and adding features.
+- There are lot to think about where to store our code ,As if now my prefernce is `GIT` as it is distributed system meaning that each contributor will have their own copy of the source code . As in central system the  repo is managed by the centrally .
+- Source code cannot be fully secret since developers need access to it. As such, we should be careful not to confuse source code storage with secret management. We need to make sure not to store secrets, such as database connection strings and credentials, in our source code. Since we keep all versions of our source code, even if we remove the secrets in a newer version, they will still be exposed in the previous versions.
+- There is a saying: "Git never forgets". Code is "committed" to a Git repo. When this happens, Git determines the changes made to the files and creates a new version based on these changes. Any user with access to the repo can look at historical commits and the changes that were made.
+
+- Gitty leaks is use to scan  the commit of a repo for sensitive information .
+
+- `Dependicies`
+The truth is that only the tip of the iceberg we are writing in our dev-environemnt,this is because a lot of code has been already written  for us in the form of libraries and SDK,Even the variables like string in an application have an entrie library behind them ! The mangement of these dependicies are the vital party of the pipleline . 
+
+`External Dependicies` These dependicies are publicly available librairies and SDK ,these are hosted on the external dependency manager as `NuGet` for the `.NET`
+`Internal Dependicies ` These are the dependices are librairies and SDK that an organisation develops and maintain internally ,these library are used for all application developed by the organisation .
+- Dependency manger are the commonly known as the `package manager` .
+
+- The management of internal dependencies is a bit more tricky. For these, we can use tools such as JFrog Artifactory or Azure Artifacts to manage these dependencies.
+
+- `Testing`
+ In old days testing was mannual ,these days most of the testing is being done with the modern piplenes ,auotmation .
+
+   - Unit test 
+    - When talking about automated testing in a pipeline, this will be the first type of testing that most developers and software engineers are familiar with. A unit test is a test case for a small part of the application or service. The idea is to test the application in smaller parts to ensure that all the functionality works as it should.
+    - In modern pipelines, unit testing can be used as quality gates. Test cases can be integrated into the Continuous Integration and Continuous Deployment (CI/CD) part of the pipeline, where the build will be stopped from progressing if these test cases fail. However, unit testing is usually focused on functionality and not security.
+  - Integration  Testing 
+    Another common testing method is integration testing. Where unit tests focus on small parts of the application, integration testing focuses on how these small parts work together. Similar to unit tests, testing will be performed for each of the integrations and can also be integrated into the CI/CD part of the pipeline. A subset of integration testing is regression testing, which aims to ensure that new features do not adversely impact existing features and functionality. However, similar to unit testing, integration testing, including regression testing, is not usually performed for security purposes.
+  - Security Testing 
+    - `SAST` This stand for the Static Appliction Security Testing . works by reviewing the source code of the application or service to identify sources of vulnerabilities.This can be integrated in pipeline as the security gates,preventing the pipline from continuing if the SAST tool still detects vulnerbilities that have not been flagged as false positive .
+    - `DAST`  Dynamic Application Security Testing (DAST) is similar to SAST but performs dynamic testing by executing the code. This allows DAST tools to detect additional vulnerabilities that would not be possible with just a source code review. 
+    - Penetration Testing is bap of all these test case  as it manual testing which are so crucial for large production stuff .
+    
+
+
+     
