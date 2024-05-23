@@ -188,4 +188,37 @@ Crawlers discover content through various means it acts as a virus and look for 
  - It is known as a terminal multiplexer . That allows you to craft a single terminal . 
  - tmux (short for terminal multiplexer) is a powerful tool that allows you to manage multiple terminal sessions from a single window. It is particularly useful for those who work extensively on the command line, such as system administrators and developers. With tmux, you can create, manage, and navigate between multiple terminal sessions easily.
  -The first session create will have the name "0" .By default tmux status bar will be green .With session name on the left .Tmux doesnt allow you to create the nested tmux unless you force it do . When running the tmux command a second time .
- 
+ - `tmux ls ` This will list all the sesiion on the current system .
+ - `tmux new -s<new-session>-d` this will create the new session with the name according to your wish .
+ - `tmux kill-session -t name pf tmuz session` This will kill the session .
+ - tmux promt allows tmux session to run command withour the tmux binary name .
+ - `ctrl b d` This will exit the tmux without closing the closing the session .
+
+ - A session is a single collection of pseudoterminals under  the  manage-
+       ment of .  Each session has one or more windows linked to it.  A window
+       occupies the entire screen and may be  split  into  rectangular  panes,
+       each  of  which  is  a separate pseudo terminal (the pty(7) manual page
+       documents the technical details of pseudo terminals).   Any  number  of
+       tmux  instances may connect to the same session, and any number of win-
+       dows may be present in the same session.  Once all sessions are killed,
+       tmux exits.
+
+       Each  session  is  persistent and will survive accidental disconnection
+       (such as ssh(1) connection timeout) or intentional detaching (with  the
+       `C-b' d key strokes). tmux may be reattached .
+       `ctrl +b` First click this combo then use any prefix key to run the tmux properly.
+- Tmux panes are use to divide the current session into multiple-sized terminal.It allow to run the multiple commands to run within the same session window.
+- Prefix means any words at the end of the word .
+
+- Tmux windows are like a new session tab you can easily swap and more .
+- To create new emoty tmux window we use the the prefix -c .
+- Tmux doesn't have the configuration file ,that doesn't mean you can't make the new one .
+- `Tmux show -g` It will show the list of all the list of file in one shot .
+- When creating the tmux configuration script is important.
+- The file name is `.tmux.conf` and `.tmux.conf` is saved within the users home direcotory ` /home/username/.tmux.conf.
+- ` ctrl b shift ` This will split the horizontally .
+- ` ctrl b ` This will split the vertically .
++ We can set the limit of the history  allow copying mode to have higher max character limit .
+- Oreos open -source .tmux.conf file 
+
+
