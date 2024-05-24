@@ -226,6 +226,11 @@ Crawlers discover content through various means it acts as a virus and look for 
 - ` ctrl b shift ` This will split the horizontally .
 - ` ctrl b ` This will split the vertically .
 + We can set the limit of the history  allow copying mode to have higher max character limit .
+
+- `ctrl +b  shift+% ` This will split the terminal into two parts .
+- `C-B` stands for the ctrl +b and them we can use the up and down key to move the terminal as per our works .
+In the all terminal our work will be totally different  .
+-`C-B` then Q will display the index of the terminal . 
 - Oreos open -source .tmux.conf file 
 
 
