@@ -298,7 +298,8 @@ These are the part where the larget automation happens .
 - Developer Bypasses is a common class of vulnerabilities that is discovered in PROD due to insecure code creeping in from DEV.
  - A staging environment mimics the production environment to perform final QA checks on application. A test environment validates each component of application under test. It is dynamic and requires specific configurations to test each component.
 
- 
+
+  
 
 
 
