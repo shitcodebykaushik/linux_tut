@@ -300,7 +300,29 @@ These are the part where the larget automation happens .
 
 
   
+ # HTTP Request Smuggling
 
+It is a vulnerability that arises when there are mismayches in different web infrastructure component .
+This includes the proxies,load balancer and servers that interpret the boundries of HTTP request .
+HTTP pipeling allow multiple request to be sent over the same TCP connection .
+It is important to calculate the size for Content- Length (CL) and (TE),it os crucial to considered the presence of the carriage return`\r` and newline character `\n`.
+- Front end server . This is usually the reverse proxy or load balancer that formwards the request to the back end .
+- Back end server  This is server side component that process the user request ,interacts with the database,and serve the data to the frontend.
+- Database It is the presistent storge system where application  data is stored .
+- API (Application Programmable Interface ) Interface that allow  the frontend and backend to communicate and integrate with the other service .
+API, which stands for Application Programming Interface, is a set of rules and protocols for building software and applications. An API allows different software programs to communicate with each other. It defines methods of communication between various components, including the kinds of requests that can be made, how they're made, the data formats that should be used, and conventions to follow.
+- Microservice Instead of single monolithic back end ,many modern application uses microserves which are small independent service that communicate over network ,often using HTTTP/REST or gRPC .
+- `Load Balancers`  These device or service distribute the incoming network traffic accross multiple servers to ensure no single server is overwhelmed with too muuch traffic .This distribution ensures high availability and reliability by redirecting requests only to online servers that can handle them. Load balancing for web servers is often done by reverse proxies. Examples include AWS Elastic Load Balancing, HAProxy, and F5 BIG-IP.
+
+- `Reverse proxies`  primary purpose is to provide a single access point and control for back-end servers. Examples include NGINX, Apache with mod_proxy, and Varnish.
+
+- `Caching` It is a technique used to store and reuse the previously fetched data or computed results to speed up subsequent request and computation .
+In the context of web infrastructure .
+- `Content caching` By storing web content that doesn't change frequently .
+- `Database Query Caching ` Databases can cache the results of frequent queries, reducing the time and resources needed to fetch the same data repeatedly.
+- `Full page caching ` Full page can be cached 
+- `Edge Caching/ CDNs` Content Delivery Networks (CDNs) cache content closer to the users (at the "edge" of the network), reducing latency and speeding up access for users around the world.
+- `API Caching ` Caching the responses can significantly reduce back-end processing for APIs that serve similar requests repeatedly.
 
 
 
