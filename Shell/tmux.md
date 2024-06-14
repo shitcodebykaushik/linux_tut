@@ -1,4 +1,4 @@
-- It is a multiplexur that allow terminal under terminal.
+%- It is a multiplexur that allow terminal under terminal.
 - To enter into the tmux just type `tmux` and enter command .
 - Once it is activated there is green singnal at the bottom .
 - By running evrything in the tmux we are getting protection from the sudden breakdown of the process .
