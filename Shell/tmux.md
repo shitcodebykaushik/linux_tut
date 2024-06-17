@@ -28,3 +28,4 @@
    - `Prefix+'` This will ask you the index where do you want to switch yourself in the window . 
 - `tmux rename-window desiredname` This will give the name of the window . 
 - `tmux kill-pane` at the desired window will kill the desired quadrant .
+# Session Management 
