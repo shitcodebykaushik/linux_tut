@@ -11,3 +11,9 @@
 - `ctrl+b` and `shift+5` This will break the tmux into multiple two part horizontially .
 - `ctrl+b` and `shift+"` This will breal the tmux into new part .
 - - `ctrl+b` and up down and left arrow this will change the our key into different location .
+
+# Day 2
+- `Prefix + use of arrow ` We can move from one terminal to another terminal using the arrow key .
+- `Prefix +
+- `exit` - This command will exit the session of the specific quadrant .
+- `tmux
