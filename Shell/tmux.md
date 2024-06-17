@@ -20,3 +20,11 @@
 - `Prefix+ D` This will detach the session . It means that it wont terminate the session . In detachment mode all the proces of the quadrant will be in the running mode for rhe sure  .
 - `tmux attach ` This will attach the session .
 - `tmux kill - pane ` This will kill the desired quadrant .
+ # Windows 
+ - In tmux it  is not he typical os which we see in the Microsoft  .
+ - `tmux new-window` This will create the new window of the tmux .
+   - `Prefix+c` This will create the new window .
+   - `Prefix+p` This will move from one window to another window .
+   - `Prefix+'` This will ask you the index where do you want to switch yourself in the window . 
+- `tmux rename-window desiredname` This will give the name of the window . 
+- `tmux kill-pane` at the desired window will kill the desired quadrant .
