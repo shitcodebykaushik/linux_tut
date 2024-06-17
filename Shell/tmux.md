@@ -16,4 +16,7 @@
 - `Prefix + use of arrow ` We can move from one terminal to another terminal using the arrow key .
 - `Prefix +
 - `exit` - This command will exit the session of the specific quadrant .
-- `tmux
+- `top` - This will list the number of process running in the system .
+- `Prefix+ D` This will detach the session . It means that it wont terminate the session . In detachment mode all the proces of the quadrant will be in the running mode for rhe sure  .
+- `tmux attach ` This will attach the session .
+- `tmux kill - pane ` This will kill the desired quadrant .
