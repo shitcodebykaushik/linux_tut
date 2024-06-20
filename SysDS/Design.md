@@ -24,3 +24,72 @@ It is the collection of the multiple individual system connected through a netwo
 - To reduce the latency we have caching . Caching is process for the storing information for a set period of time on the computer .
 - To reduce the latency we have CDN . These are the geographically proxy networks and their objective is to serve content to users more quickly .
 - Or we can upgrade the server to decrese the latency .
+
+# Throughput 
+- It is the volume of work or data flowing through the system .
+- It is amount of data transmitted per unit time .
+- It is measured in the bps .
+- It is more in the distributed system as we use load balancer here . Load balancer reduce the request by distributing them with the other maching using round and robin .
+- It is less in MONOLthic .
+- CDN ,CACHING DISTIBUTED SYSTEM .
+
+ 
+# Availability 
+- Monolothic have less availibilty. As the system go down the module go downs. 
+- Distibuted have more availibity as we have the replicaia here .
+- Fault tolerence is directely proptional to availiabilty ,
+- To increas the avaialibity we can do replication of the server  ,ds,redundancy .
+- Replication include the redundancy but involves the copying of data from the one node to another or the syncrinization of state between node .
+- Redudancy is the duplication of nodes in case of some of them are failing .
+
+
+# Consistency 
+- When more then one client request the sytem for all such requests it will be called when each client gets the same data,The data should be always be consistent,regardless of who is accessing it form whereever ,The DB should update it as soon as possible .
+- The missmangement in the data is called dirty read .
+
+- Factors to improve the consitency
+ - Improving the network bandwith
+ - Stop the read
+ - Replication based on Distance aware strategies 
+- Types of consistency
+ - Strong constitency   When the system doesnt allow read operation until all the nodes with replicated .
+ - Weak constinecy  There is no gurantee of any such things .
+ - Eventual consitency Some users might recive the old data but eventualyy it will be updated soon .
+
+
+# CAP THEORM
+- It is always to possible to attain any two things .System designer need to selcet any two things at a time .
+- This is because of dirty read data or consitency may need to send the data frequently . 
+- C - consistency
+- A - availiablity 
+- P - partion toelrence 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
