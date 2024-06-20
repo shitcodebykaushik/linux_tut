@@ -65,6 +65,105 @@ It is the collection of the multiple individual system connected through a netwo
 - P - partion toelrence 
 
 
+# Logical Clock 
+- Time means  to know the sequence of the event . 
+
+# Scalabilty 
+- IF the number request increase then the whether your server is going to response properly or not .
+-  Vertical Scaling - It is means the upgradation of  the same server by making the configuration better . Single point of failure of there . Easy to configure
+- Horizontal Scaling - It means that adding the new machine with the existing machine . Single point of failure is not there ,Secuity is tough .
+
+
+
+
+
+# Redundancy (copy krna)
+- It is simply duplication of the nodes or components so that when a node or componets fails then the duplicate node is available to service the customers .
+- Active redundancy is considered when each unit is operating /active and responding to the action . Multiple nodes are connnected to a load balance,and each unit recives an equal load .
+- Passive redundancy means that when one node is working and another one is not operational.
+
+# Replication 
+- redundancy+syncronization 
+- Active where every nodes is accepting the request 
+- Passive where every read write are done by the master .
+- 
+
+# Load Balancer 
+- It is the process of efficient distribution of network traffic accros all nodes in a distributed system .
+- VIP means virtual IP 
+- We write the code in the load balancer to direct the request where to go .
+- Load balancer ensure the high scalabilty,high trhrouhput,high availability .
+- No need to use this in monolothic arch .
+- We can use this in distibuted or microservice .
+- Single point of failure is there to solve this issue we can use passive load balancer .
+- Advantage
+  - Optimization It helps in resource utilization .
+  - better user experince  
+  - Prevents downtime - It keep record of the server that are not functional .
+  - Scalibility 
+- Algorithm is left 
+
+# Caching 
+
+- It is fast and we use ram .
+- Reduce the Api call .
+- First we load the data from the DB then we define the caching .
+- We can define the time limit of the caching .
+- In caching there is no network call .
+- IN MEMOERY/LOCAL
+- DISTRIBUTED/IN HAND 
+- When the app is read extensive then apply the caching  .
+
+# Cache Eviction Strategies 
+- TTl time to live
+- Approx we give 4hr timing . As we miss this time  then we go to db to fetech the data ,
+- Deleting of the caching  is known as cache eviction .
+#  File based storage system
+
+- A file-based storage system is a databse sustem where data is stored in the form of files .
+- Challenges
+ - Data Redundancy 
+ - Poor security 
+ - Slow 
+# RDBMS
+- It is software that perform the opeartiona on relational data base and store the data in the table . The relationship is maintained using the foreign key .
+- No data reduncy and incosistency
+- Data concurency
+- Data integrity 
+- Data searching 
+- Problem 
+ - Rigid schema
+ - High cost 
+ - Scalability issue
+# NoSQL
+ - It is a non-relational database .
+ -  It is the umberalla term comprising of four different types of database .
+    - Key value db - These types of db is used for caching eg . reddis .
+    - Document  db - It combine the edbms and no sql .Mongodb
+    - columnar db - columns are stored togrther instead of rows  casandra .
+    - Graph db - In the form of graph stucture  used for social netowrk .
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
