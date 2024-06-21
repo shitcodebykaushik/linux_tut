@@ -143,7 +143,59 @@ It is the collection of the multiple individual system connected through a netwo
     - columnar db - columns are stored togrther instead of rows  casandra .
     - Graph db - In the form of graph stucture  used for social netowrk .
 
- 
+# Synchronous Communication 
+- It is known as the blocking call .
+- When you wait for procees to finish then only you can move to the next one is called synchronous .
+- In this everythings happens at the sequenstial process .
+- We use this to achive high constiency .
+- We use this in transcation platform .
+- Stock market ticket booking real Bank payemnt  time decision making.
+- Real time things nedd to be sync.
+# Async communication 
+- It is known as non blocking call .
+- In this we dont wait for other function complete exection .
+- Computation takes lot of time .
+- Scalability of application .
+- Avoid cascading failure .
+# Message based communication 
+- Clients sends the request in the form of message 
+- Prodcuer Those who sent the request .
+- Consumer Those who receive the request .
+- Agent is the channel between producer and communication .
+- P2P model is based on the ques
+- Publish subcribe Model achived by the kafka and Rabiit MQ .
+
+# Web Server
+ - Tools or program that helps to keep the web application always up and running  .
+ - It can be software/hardware or both working together  .
+ - It store the file to serve the file .
+ - It connect to the network and support the physical data transfer .
+ - HTTP SERVER is software part that understnd the URL and HTTP .
+#  Communication protocol
+ - These protocol can be implemented using harware software or combination of the both .
+ - PUSH -> The client pushes new event to the client this method reduces the server load .
+ - Pull/Polling  -> Here client requesst and server responds .
+ - Long Polling  -> clint request ,server keep it open until it give response.
+ - Socket  -> Here we need frequent connection . Here we make two way  connection channel .
+ - Server sent events Similiar to push .
+
+# Authentication vs Authorization 
+ - Authentication  Who are you? LOgin cred
+ -  Authorization   What can you do given permission .
+# Token based authentication 
+- In this token expire after some time .
+# Oauth  authentication
+- Third party as auth .
+# Forward Proxy 
+-  A hardware of software that is placed between a client and an application to provide intermediary service in the communication .
+- It provide gateway in the forward and backward 
+- There are two proxy 
+ - Forward 
+ - Revers Proxy 
+
+
+
+
 
 
 
