@@ -40,7 +40,23 @@
   # AWS S3
    - It means amazon simple storage service .
    - Buckets are contianer for the data store in the S3 .
+   - Dynamo DB is the key-value database service.It is serverless which means you do not have to provison,patch or manage servers .
+  # AWS EC2 (Amazon elastic Compute cloud)
+  - An instance refers to the virtual server in the cloud .
+  - With EC2 we can congifgure and setup our os  uponf which our application will run .
+  - EC2 determine the hardware availibility to your instance .
+  - Each instance types offers a different balance of compute,memory,network and storage resource ,
+  - Reserved instance are one cheaper instance for the long time runn.
+  # Amazon Virtual Private cloud (Amazon VPC )
+  - In this module we create our own pvt network .
+  -  An VPC is an isolated portion of the AWS populate by .
+
+  # AWS RDS (Relational Database Service )
+   - It is use to set-up and scale relational database in the AWS cloud .
    - 
-
-
-    
+  # AWS IAM (Identity and Access Management )
+   - It let the user with the permission accros AWS.
+  # AWS lambda 
+   - It is a serverless computing service that is used to process snippets of code when a lambad function os triggered .
+  # AWS cloud watch 
+   - It is use to monitor the stuff .
