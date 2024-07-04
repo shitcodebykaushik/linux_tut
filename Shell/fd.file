@@ -1,0 +1,4 @@
+#!/bin/bash
+book="black hat bash"
+echo $book
+ls 
