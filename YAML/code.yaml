@@ -1,0 +1,19 @@
+# let go ahead ans write the some yaml . It is a key value things .
+courses: 
+# These are the object of it 
+ course_name: DJango back end devlopment
+ version : 1.2
+ price : 200
+ is_public: true 
+ release_date: 2001-02-02 12:23:23
+ pre_enrol: null 
+
+ tags :
+  - python
+  - web developer
+  - mysql 
+course_ta: ["anirudh","anurag","rakesh"]  # Here we have string under the array .
+ta_details:
+- name: "anirudh"
+  email: "anirudh@dev.co"
+  role: "Dididi"
