@@ -59,29 +59,12 @@
   - CRI => Containr Run Time it tells how our container run . CRI tells to runc to make container it never make by themselves . Runc(go-lang) tell to C-group (provide the isolation).
   - CSI => Constainer Storage interface . 
   - Every things go in the Queue in k8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - CRD => Custom resource defination which is use to extend the meaning of the object . Operator apply the CRD . It extends the functionallity of the k8 .
 - K8 is the plugin based arch .Plugin means to add the predefined the things .
 -  Static pods are pods created and managed by kubelet daemon on a specific node without API server observing them. If the static pod crashes, kubelet restar
 
 ts them. Control plane is not involved in lifecycle of static pod. Kubelet also tries to create a mirror pod on the kubernetes api server for each static pod so that the static pods are visible i.e., when you do kubectl get pod for example, the mirror object of static pod is also listed.
 - Always take the odd number of node for the production rason being of the highly available . 
-- 
+
+ # Day 2
+ 
