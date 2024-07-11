@@ -2,8 +2,21 @@
 It is version control system .
 It is  also known as the versioning system.
 It is the terminal system tool
-- Git is tge software
+- Git is the software
 - Git hub is the service provider.
+- A git repository can be seen as a database containing all the information needed to retain and manage the revisions and history of a project. In git, repositories are used to retain a complete copy of the entire project throughout its lifetime. 
+- Git is kind of the database .
+- Inside the git there is two data structure - the object store and the index .
+- The index is the temp data that is  private to the a repository and may be produced or edited as needed .
+- Object store lies at the heart of the git's data storage mechanism . It contains the all imporatant information about and other  information required to rebuild any version or branch of the project .
+-  Git have the four types of the objects .
+   - blobs It represent the each version of the file
+   - trees It represent the a single level of directory .It saves the blob IDs. 
+   - commits It handle the change made into the repository . A directed a cyclic graph is use to handle the change .
+   - tags 
+
+- Git objects store is organized and implemented as storage system with the content addresses .
+
 
 - Commit 
   - It is like checkpoint.
