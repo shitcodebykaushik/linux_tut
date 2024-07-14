@@ -67,4 +67,19 @@ ts them. Control plane is not involved in lifecycle of static pod. Kubelet also 
 - Always take the odd number of node for the production rason being of the highly available . 
 
  # Day 2
- 
+ - Observality => Tracing+Profiling+Monitoring+Logging combines together to form this . And this is known as the O||Y (oly) .
+
+ - Big Query for the database warehouse .
+ -  Always try to name the cluster with the matching to the project and team name so that it will be helpfull to recognise.
+ - Brfore doing the nofr placement,do the dynamic routing then choose the location ,reason being it will help u to decrease the latency .
+ - Release channel  should be the regular one as it will provide the stability .
+ - Stability means backed by data which means that most of the company is using it .
+ - Default pool 
+   - Pool means no of cpu or gpu you need it  !
+ - Try for the machine configuration for the N1 .
+ - SSD for starting should be 1.
+ KIND => Means K8 in the docker .    It is a command line interface that is built on the packages.
+   - Kind create cluster --name kaushik // This is single node cluster .
+    # Tip :- Version of the worker node can't be the larger then master node .
+
+ - Minikube is the single-node cluster .Here we can create multinode cluster .
