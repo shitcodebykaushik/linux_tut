@@ -80,6 +80,17 @@ ts them. Control plane is not involved in lifecycle of static pod. Kubelet also 
  - SSD for starting should be 1.
  KIND => Means K8 in the docker .    It is a command line interface that is built on the packages.
    - Kind create cluster --name kaushik // This is single node cluster .
-    # Tip :- Version of the worker node can't be the larger then master node .
-
+   -  Tip :- Version of the worker node can't be the larger then master node .Because of the backward compatibilty issue.
+   - `kubectl get nodes` This will return the number of the nodes available .  
+  - Anything runnig on the K8 is pods.
+  - Underlaying deployment is made of the pods .
+  - Objects in the k8 are the pods ingress and services .
+  - Components are the master node and slave node .
+  - kubctl is the command line utility .
+  - kind ,kubedemon,Minicube are the cluster creation things .
+  - Image are the code,runtime,syslib and running instance of the of the application and the main reason is portability .
+  - Images are stored in the registry .
+  - The more less layer in the image the more useful it is . As the size will be less and the seucrity will be less .
+  - Run Copy these are the words in the yml file of the dockerfile .
+  - We should use the distroless image for the best practice as it will more fast and efficinet .
  - Minikube is the single-node cluster .Here we can create multinode cluster .
