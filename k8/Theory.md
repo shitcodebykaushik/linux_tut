@@ -93,4 +93,12 @@ ts them. Control plane is not involved in lifecycle of static pod. Kubelet also 
   - The more less layer in the image the more useful it is . As the size will be less and the seucrity will be less .
   - Run Copy these are the words in the yml file of the dockerfile .
   - We should use the distroless image for the best practice as it will more fast and efficinet .
+  - Company use the multistaged version which is the combination of the alpine (base image) and the final version is created over this base and distroless images are used .
+  - Rootless means 
+- To run the image we have given the another abstraction known as the container ,inside the container we load the image.
+
+- Statefull and stateless are the two state of the application .
+ - Stateless who does;t preseve the data . Eg. fronted 
+ - Statefull who store the data . Eg Database .
+
  - Minikube is the single-node cluster .Here we can create multinode cluster .
