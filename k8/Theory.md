@@ -110,3 +110,14 @@ ts them. Control plane is not involved in lifecycle of static pod. Kubelet also 
   - `k get event ` This will list caputure things .
   - `k9s` It is a tolkit and resource for the cluster .
   
+# PODS
+- After container there is one more abstraction and that is POD .
+- Cluster+NODE+POD+Container + Image . This is the sequence .
+- It is the epheneriphical . It is the best friend of the node .
+- We dont add single POD .
+- Every time there is change of the IP whenever it is die .
+- PODS are made with the YAML file .
+  - apiversions are firstimposrtant things .
+  - kind it describe which type of the resource it is eg pod,ingress etc .
+  - metadata lets you know about more  regarding the pods .
+  - 
