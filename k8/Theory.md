@@ -86,7 +86,7 @@ ts them. Control plane is not involved in lifecycle of static pod. Kubelet also 
   - Underlaying deployment is made of the pods .
   - Objects in the k8 are the pods ingress and services .
   - Components are the master node and slave node .
-  - kubctl is the command line utility .
+  - kubctl is the command line utility . It comes the preinstalled on the cloud one .
   - kind ,kubedemon,Minicube are the cluster creation things .
   - Image are the code,runtime,syslib and running instance of the of the application and the main reason is portability .
   - Images are stored in the registry .
@@ -102,3 +102,11 @@ ts them. Control plane is not involved in lifecycle of static pod. Kubelet also 
  - Statefull who store the data . Eg Database .
 
  - Minikube is the single-node cluster .Here we can create multinode cluster .
+
+ - We can use alias to save the time .And this is bad practice .
+  - `K(kubectl) get nodes` This will bring the nodes .
+  - `k get nodes -o wide .`
+  - `describe node .`
+  - `k get event ` This will list caputure things .
+  - `k9s` It is a tolkit and resource for the cluster .
+  
