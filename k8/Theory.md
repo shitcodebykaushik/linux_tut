@@ -112,6 +112,7 @@ ts them. Control plane is not involved in lifecycle of static pod. Kubelet also 
   
 # PODS
 - After container there is one more abstraction and that is POD .
+- PODS are the smalles deployable units of the computing that you can create and manage in k8. 
 - Cluster+NODE+POD+Container + Image . This is the sequence .
 - It is the epheneriphical . It is the best friend of the node .
 - We dont add single POD .
