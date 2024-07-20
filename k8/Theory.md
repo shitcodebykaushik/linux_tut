@@ -3,7 +3,7 @@
 -  HTTP 1.1 
    - This is json and xml based
 - Then HTTP 2
-
+- K8 can increase the scability the of the system .
 - Grpc 
  - This is based on the rpc and protbuf .
  - It is good in multiplexing means that it can do bidirectional talks .
@@ -111,14 +111,32 @@ ts them. Control plane is not involved in lifecycle of static pod. Kubelet also 
   - `k9s` It is a tolkit and resource for the cluster .
   
 # PODS
+- Pods are the best friend of the container .
+- We dont run the single pod in the production .
+- Pods are epermerical .
+- Pods are disposable .
+- Pods are not confirmed things .
 - After container there is one more abstraction and that is POD .
 - PODS are the smalles deployable units of the computing that you can create and manage in k8. 
+- The main purpose of the pod is to run image.
 - Cluster+NODE+POD+Container + Image . This is the sequence .
 - It is the epheneriphical . It is the best friend of the node .
 - We dont add single POD .
 - Every time there is change of the IP whenever it is die .
 - PODS are made with the YAML file .
-  - apiversions are firstimposrtant things .
-  - kind it describe which type of the resource it is eg pod,ingress etc .
-  - metadata lets you know about more  regarding the pods .
-  - 
+  - `apiversions` are firstimposrtant things . It signifies the group of the api .
+  - `kind` it describe which type of the resource it is eg pod,ingress etc .
+  - `metadata` lets you know about more  regarding the pods .
+  - `spec` section are the most important things. Under spec we have container .
+     - Containers:
+        name:
+        images:
+        ports:
+- Methods to create the pods .
+     - `kubectl api-resources`   It will list the all the resource types that are available .
+     -  `k run raju --image nginx -- sleep 1d` This will create the pods and it will sleep for one day .
+     - `get pods` This will list the pods ,
+     - `describe po/raju ` This will give the breif details of the pods .
+     - `k get pods -owide ` This will list all the pods in the current namespace .
+     
+
