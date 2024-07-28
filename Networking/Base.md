@@ -326,6 +326,18 @@ In the context of web infrastructure .
 
 
 
+# Subnetting
+- The division of an address range of IPv4 address into smaller adderes range is called subnetting .
+-  A subnet is the logical segment of the network that uses IP address with  the same network address . We can create a specific subnet by ourselves .
+- IP address is divided into the network part and the host part .
+  - Network address
+  - Broadcast address 
+  - First host 
+  - Last host
+  - Number of hosts 
+     
+
+
 
 
 
