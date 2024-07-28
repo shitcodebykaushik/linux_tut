@@ -114,7 +114,7 @@ ts them. Control plane is not involved in lifecycle of static pod. Kubelet also 
 - Pods are the best friend of the container .
 - We dont run the single pod in the production .
 - Pods are epermerical .
-- Pods are disposable .
+- Pods are disposable.
 - Pods are not confirmed things .
 - After container there is one more abstraction and that is POD .
 - PODS are the smalles deployable units of the computing that you can create and manage in k8. 
