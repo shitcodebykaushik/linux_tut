@@ -72,4 +72,8 @@ The head is always towards the master .
   
 
 # Github CI-CD
-  
+
+
+
+# Env file 
+- The .env file lets you customize your individual working environment variables.
