@@ -336,7 +336,9 @@ In the context of web infrastructure .
   - Last host
   - Number of hosts 
      
-
+- Port is software based construct that serves as a communication .
+- It is virtual  points where network connection begin and stop,controlled by the os .
+-  Each ports are connected to the different procedure or service which allow computer to differentiate  between various types of network traffic .
 
 
 
