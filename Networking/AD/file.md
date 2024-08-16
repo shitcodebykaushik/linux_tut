@@ -1,0 +1,13 @@
+- AD means active directory which is now known as the  AZURE AD .
+- There are always the noPac attack in the pentesting , 
+- In year 2021 we have these major vulnerability .
+  - PrintNightmare 
+  - The shadow credentials 
+  - noPac
+- 2022 
+  - ZeroLogon made the attacker to impersonate any unpatched domain controller in a network .
+  -   
+-  There is the resource-based constrained delegation .
+- 2023
+  - Printer Bug was discovered and Poc tool was released .
+- 
