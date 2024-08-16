@@ -20,4 +20,28 @@
 - Active directory provides authentication and authorization within a window domain environment .
 -  There one root domain and it contains the child or tree root .
  - It is common to see the multiple domain linked together via trust relationship in the organisation that perform a lot of acquisitions ,
+-  Object can be defined as Any resource present within an Active Directory environment such as OUs,printers ,users.
+- And every objects in Active directory has an associated set of  attributes used to define characteristic of the given  object .
+- Schema is the blueprint of any enterprise environment . It defines what tpyes of objects can exit in the AD database and their associated attributes .
+- A domain is the logical group of the object  such as the computers users ,groups etc .
+- A forest is the collection of the active directory domains .
+- A tree is a collection of the Active directory domains that begins  at a single root domain .
+- A forest is a collection of AD trees .
+- Each domain tree share the boundry with the other domains .
+- A parent- child relationship is formed when a domain is added under the another domain in thre tree 
+- Container objects hold other objects and have defined place in the directory.
+- Leaf objects are found at the end of the subtree hierarchy .
+- A GUID is a unique 128 bit value assigned when a domain user or group is created . It is uniwue across the enterprise . It is stored into the ObjectGUID attribute ,
+- Security principal is anything that an OS can authenticate ,including users computers accounts ot even threads/process that run in the context of the user or computer account .
+- In AD security principal are the domain objects that can manages access to other resource .
+- Security identifier is used as unique identifier for a security group . It can be used only omcvre
+- Distinguished name describe the full path to an object in AD .
+- Relative Distinguished Name is a single compnent of the  Distinguished Name that identifies the object . 
+- MSBROWSE is the Microsoft networking protocol which was used in the early days .
+- NTDS.DIT is the heart of the ACTIVE Directory .
+- sIDHistort holds any SIDS that an objects was assigned previously. It is mostly used in the  migrastion so a user can maintain the same level of the access when migrated from the one domaint to another .
+- SYSVOL stores the copies of the public files in the domain such as system policies .
+- AD Recycle Bin is use to faciliate the recovery of deleted AD Objects . This made the sysadmin to restore the objects ,avoiding the need to restore from backups .
+- Tombstone is a container object that holds deleted AD objects . 
+- A gloabl catalog (GC) is a domain cotroller that stores copies of all objects in an Active directory forest . The GC stores a full copy of all objects in the current domain .
 - 
