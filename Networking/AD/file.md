@@ -1,4 +1,9 @@
 - AD means active directory which is now known as the  AZURE AD .
+- AD is a directory service for windowa network environment . It is distributed heirachical structure that allows for centralized management of an organization . It allows the organization to  to stroe the data that makes it available to both the user and administrator  on the same netwoek .
+- Ad was first shipped with the windows 2000 . But it had come under many attack in the recent year .
+- Ad misconfiguration often lead to obtain the foothold (internal acces )
+- Ad is the large database that are accessible to all the users reagardless of their domain within the network .
+- 
 - There are always the noPac attack in the pentesting , 
 - In year 2021 we have these major vulnerability .
   - PrintNightmare 
