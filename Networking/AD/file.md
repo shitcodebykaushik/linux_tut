@@ -15,4 +15,9 @@
 -  There is the resource-based constrained delegation .
 - 2023
   - Printer Bug was discovered and Poc tool was released .
+- Ad is arranged in the hierarchical tree structure . 
+- Forst active directory can contain one or more domains.
+- Active directory provides authentication and authorization within a window domain environment .
+-  There one root domain and it contains the child or tree root .
+ - It is common to see the multiple domain linked together via trust relationship in the organisation that perform a lot of acquisitions ,
 - 
