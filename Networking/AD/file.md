@@ -44,4 +44,15 @@
 - AD Recycle Bin is use to faciliate the recovery of deleted AD Objects . This made the sysadmin to restore the objects ,avoiding the need to restore from backups .
 - Tombstone is a container object that holds deleted AD objects . 
 - A gloabl catalog (GC) is a domain cotroller that stores copies of all objects in an Active directory forest . The GC stores a full copy of all objects in the current domain .
-- 
+# Active Directory objects  
+- Object is anyresource present within the Active Directory .
+- User are the considered leaf objects which means that they cannot contain any other objects within them .
+- Contact objects is usually used to represent an external user and contains informations attributes such a first name,last name etc .
+- Printers objects points to a printer accessible within the AD network .
+- Computer objects are the computer that are coonected to the AD network .
+- A shared folder objects points to the shared folder specific computer where the folder resides. 
+- A container us considered a container objects because it can contain other objecrts .
+- Domain controllers are essentially  the brains of the AD network .
+- Sites in AD is a set of computers across one or more subnets connected using high speed  .
+- Domain is the structure of the network .
+- Ou is the Organizational unit is a container that systems administartion can use to store the simliar objects  for ease of administrative .
