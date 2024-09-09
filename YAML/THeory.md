@@ -25,3 +25,11 @@
   - CircleCl (Cl/CD Automation)
 
 - YAML is powerful language that can be used for configuration files, message beetween application and saving application state . 
+- YAML helps to create the multi container file in the docker compose .
+ - A multi-container application is a software that is composed of multiple container each running a disctinct components or service of the application ,rather than bundling evenrything into a single container ,multicontainer approcah leaverage the miscorservice architecture by sepearating doffernet concerns into independent containers which can communicate with each other .
+ - Each container run single service . This keeps service modular allowing easier maintainece updates and scaling .
+ - Container communicate over the internal network in the docker .
+ -  We can scale each service independenlty  based on the apolication need .
+ - Multicontianer follow the MICROSERVICE container allowing them distribute the task .
+ - A container is  standard unit of the software that package up code and all its dependencies so the application run quickely and reliably from one computing environment to another .
+ 
