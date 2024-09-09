@@ -2,6 +2,7 @@
 - It is the serilization language . It helps to coummunicate in two different lanugage/system/tech .
 - It is important for making the efficient data managemnt system and automation ,
 - It is the great tool for server and cloud .
+- It object serialization abilities make it viable replacemnt for the language like JSon .
 - We can have multiple yaml file under one yaml file . The seperation between each documents is marked by the three dashess (---)
 - YAML allow you to add commands to files using the hash symbol (#) similiar to python commnets .
 - YAML uses the indentation system similar to python to show the structure of the program . And we are required to use space to create the indentation rather then the tabs to avoid confusion .
@@ -11,4 +12,16 @@
 - In Yaml most of the things are the key-value pair  where `key` represent the `pairs` name and `value` represent the data linked to that name . It is the unique within that file .
 - Scaler represnt the single stored value  .
 - String are the collection of the character that represent a sentence or phrase   We use `|` to print each string as a new line and `>` to print as a paragraph .
+- YAML is use to create the automation protocol that can executes a series of command listed in the YAML file .
+- Writing a automation file depends on some specific tools or the system  .
+ - Automation is use to perfom task or process with the minimal or no human  intervation .
+ -  Continous integration refers to the practice of the automatically and frequently integration code changes into shared source code repository .
+ - Continous delivery  or deployemt refers to the integration ,testing and delivery of code changes . CI/CD automates the manual intervation traditionally needed to get new code from a commint into the prodution downtime is minimise and code release happen faster  .
+- Yaml file are used for the writing the automation of the following tools .
+  -  Github Action 
+  -  Ansible Playbook (IT Automation )
+  -  Kubernetes (Infrastructure Autoamtion )
+  - Docker Composes (Container Automation)
+  - CircleCl (Cl/CD Automation)
 
+- YAML is powerful language that can be used for configuration files, message beetween application and saving application state . 
