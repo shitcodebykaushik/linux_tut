@@ -17,3 +17,14 @@ ta_details:
 - name: "anirudh"
   email: "anirudh@dev.co"
   role: "Dididi"
+
+
+str: Hello World
+data: |
+   These
+   Newlines
+   Are broken up
+data1: >
+   This text is
+   wrapped and is a
+   single paragraph

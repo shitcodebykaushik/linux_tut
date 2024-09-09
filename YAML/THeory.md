@@ -1,4 +1,14 @@
 - YANT MARKUP LANGUAGE 
 - It is the serilization language . It helps to coummunicate in two different lanugage/system/tech .
-
+- It is important for making the efficient data managemnt system and automation ,
 - It is the great tool for server and cloud .
+- We can have multiple yaml file under one yaml file . The seperation between each documents is marked by the three dashess (---)
+- YAML allow you to add commands to files using the hash symbol (#) similiar to python commnets .
+- YAML uses the indentation system similar to python to show the structure of the program . And we are required to use space to create the indentation rather then the tabs to avoid confusion .
+- YAML cuts the use cases of the quoatation marks,brackets,and the braces  these formating specification increases the readability of the files beyond XML and the json .
+- YAML offers auto detetecting data types while also supporting explict typing(means declaring specific type of variable ) .
+- As a data-representation format yaml does not contain executables . It is therefore save to exchange yaml files with the external parties .
+- In Yaml most of the things are the key-value pair  where `key` represent the `pairs` name and `value` represent the data linked to that name . It is the unique within that file .
+- Scaler represnt the single stored value  .
+- String are the collection of the character that represent a sentence or phrase   We use `|` to print each string as a new line and `>` to print as a paragraph .
+
