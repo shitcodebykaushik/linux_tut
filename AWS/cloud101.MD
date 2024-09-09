@@ -1,4 +1,4 @@
-# why
+# Why
 - Its journey started from the year 1960 .
 - Through this this we can acces resource dynamically for agility and flexibility to meet customer needs .
 - In this we pay as we go to test and use the system without being commited .
