@@ -340,9 +340,11 @@ In the context of web infrastructure .
 - It is virtual  points where network connection begin and stop,controlled by the os .
 -  Each ports are connected to the different procedure or service which allow computer to differentiate  between various types of network traffic .
 
+# Metasploit 
+ - It contains the ready made tools and scans which helps to get easy reverse shells  .
+ - Be carefull because there machine where 
 
-
-
+- Lab setup
 
 
 
