@@ -345,7 +345,12 @@ In the context of web infrastructure .
  - Be carefull because there machine where 
 
 - Lab setup
--
+- Remember you need to control the threats from the internet person .  We are the penetration tester  and we have the skills of the hacker  to performt he real-world cyber attacks on the organization to perform the  simulations of things .
+- Cyber Kill chain framework is secutriy defense model to identify and the describe the stage of the cyber attack from the initial reconnaissance to the data exfiltration . 
+- Ransomware is a the crypto-malware designed to compromise the vulnerable systems. Once the system is infected with the ransomeware ,it will encrypt all the data within local drives except the operating system . It also have the capabilities of also compromising any cloud storage that is linked to the infected device .
+-  Vulnerability analysis typically involves the assessors or pentestor testers running vulnerability or network/port scans to better understand which service are on the network or the applications running on a system and wheather there are vulnerbilities in any system included in the scope of the assessment,this process often include manual vulnerability discovery and testing which is often the most accurate form of vulnerability analysis or vulnerability assessment .
+
+
 
 
 
