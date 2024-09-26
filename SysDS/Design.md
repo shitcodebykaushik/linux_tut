@@ -192,6 +192,7 @@ It is the collection of the multiple individual system connected through a netwo
 - There are two proxy 
  - Forward 
  - Revers Proxy 
+ - Instance means specofic occurance of the class or the object .
 
 
 
