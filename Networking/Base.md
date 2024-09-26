@@ -341,6 +341,7 @@ In the context of web infrastructure .
 -  Each ports are connected to the different procedure or service which allow computer to differentiate  between various types of network traffic .
 
 # Metasploit 
+ - It is a framwork .
  - It contains the ready made tools and scans which helps to get easy reverse shells  .
  - Be carefull because there machine where 
 
@@ -349,8 +350,15 @@ In the context of web infrastructure .
 - Cyber Kill chain framework is secutriy defense model to identify and the describe the stage of the cyber attack from the initial reconnaissance to the data exfiltration . 
 - Ransomware is a the crypto-malware designed to compromise the vulnerable systems. Once the system is infected with the ransomeware ,it will encrypt all the data within local drives except the operating system . It also have the capabilities of also compromising any cloud storage that is linked to the infected device .
 -  Vulnerability analysis typically involves the assessors or pentestor testers running vulnerability or network/port scans to better understand which service are on the network or the applications running on a system and wheather there are vulnerbilities in any system included in the scope of the assessment,this process often include manual vulnerability discovery and testing which is often the most accurate form of vulnerability analysis or vulnerability assessment .
-
-
-
-
-
+- In the virtual system we are unable to use FAT32 partition since large files are not supported in the that filesystem . Due to which we need to choose the NTFs,ext3 or some other filesystem formate . The recommended amount is 30gb .
+- 64-bit quad core CPU is good for it  .
+- Never expose Metasploitable  to an untrusted network use NAT or Host-only mode ! .
+- Metasploits is written in the Ruby . 
+-  Metasploit is provided in the metasploit framerwork pacakge and is installed in the `/usr/share/metasploit-framework directory.`
+- The MSF filesystem is laid out in an intutive manner and is organized by directory .
+- The data directory contains editable filed used by Metasploit to store the binaries required for cetain exploits  wordlist images and more .
+- The documentation directory contains the available documentation for the framework . 
+-  The lib contain the meat of the framwork .
+- The module contain the  the actual MSF module for exploits auxiliart and post module payloads encodets and non genetors .
+- plugins contains the usefull plugin of the metasploit .
+- The scripts dir contains the Meterpreter and the other scripts .
