@@ -77,3 +77,19 @@ The head is always towards the master .
 
 # Env file 
 - The .env file lets you customize your individual working environment variables.
+# .gitignore 
+ - We ignore these files in Git to specify intentionally untracked files that git should ignored ,these files and directories don't need to be versioned .
+ ```-bash
+ # Ignore all .log files
+*.log
+
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore all .env files
+.env
+
+# Ignore build/ directory
+/build/``` 
+```
+It keeps the repository clean and helps you to make sure to avoid security risks .
