@@ -382,3 +382,7 @@ In the context of web infrastructure .
 - MSFconsole is probally the most usefull interface to the MetaSploit Framework . It provides the all in one centrailized console and allows you efficient access to the virtually all of the options available in the MSF . 
 - msfconsole is lauched simply with the `msfconsole -q` .
 
+- When virtual machine are run on the cloud then it is called `instance` .
+-  The process of the gathring the information about the system  to identifu  and exploit the vulnerabilities . It give the collective knowledge to both the developers pentester and the shit .
+
+- Nix tools are the cross-platform managers for the unix-like systens and tools to instantiate and manage Unix-like . 
