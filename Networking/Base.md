@@ -358,7 +358,27 @@ In the context of web infrastructure .
 - The MSF filesystem is laid out in an intutive manner and is organized by directory .
 - The data directory contains editable filed used by Metasploit to store the binaries required for cetain exploits  wordlist images and more .
 - The documentation directory contains the available documentation for the framework . 
--  The lib contain the meat of the framwork .
-- The module contain the  the actual MSF module for exploits auxiliart and post module payloads encodets and non genetors .
-- plugins contains the usefull plugin of the metasploit .
-- The scripts dir contains the Meterpreter and the other scripts .
+-  The term `"module"` in cybersecurity denotes a self-contained unit that either provides a specific security function, constitutes a part of a cybersecurity framework, or refers to a dedicated cryptographic component. They are fundamental for building effective and manageable security solutions, as well as for organizing and imparting cybersecurity knowledge.
+-  The `lib` contain the meat of the framwork .
+- The `module` contain the  the actual MSF module for exploits auxiliart and post module payloads encodets and non genetors .
+- `plugins` contains the usefull plugin of the metasploit .
+- The `scripts dir` contains the Meterpreter and the other scripts . 
+- The tools` directory contains the useful commands utilities for the metasploit .
+- Metasploit library containe the number of the MSF lib that allows us to exploits without having to write the additional code for the rudimentary  such as the HTTP request and the encoding of payloads .
+  - `Rex` It handles the http smb ssl unicode teaxt transformation and handle the sockets . 
+  - `Msf::Core`  It provides the basic API .
+  - `Msf::Base`  It provides the friendly API . 
+- Almost all  of your interation with metasploit will be through its many module which it looks into the two location , the primary module is store under the `/usr/share/metasploit-framework/modules/` and the second one is the home dir which is our custom `~/.msf4/modules/.`
+- `Auxiliary modules` include port scanners and the fuzzers sniffers and more.
+
+- `Payloads` consist the code that run remotely . While encoders ensure that payloads make it to their destination intaact . Nops keep the payloads sizes consistent across exploit attempts .
+- Metasploit give you the option to load modules either at runtime or at after the msfconsole has been alredy been started . To add the additional module use the `loadpath` . 
+- MSF architecture  
+   - In this all modules are the ruby classes .
+   - Modules inherits from the MSF:: Module class .
+   - There are the shared common API 
+  - Payloads are slightly different they are created at runtime from the various componetns .
+  - Glue together with the stage .
+- MSFconsole is probally the most usefull interface to the MetaSploit Framework . It provides the all in one centrailized console and allows you efficient access to the virtually all of the options available in the MSF . 
+- msfconsole is lauched simply with the `msfconsole -q` .
+
