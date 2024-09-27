@@ -386,3 +386,9 @@ In the context of web infrastructure .
 -  The process of the gathring the information about the system  to identifu  and exploit the vulnerabilities . It give the collective knowledge to both the developers pentester and the shit .
 
 - Nix tools are the cross-platform managers for the unix-like systens and tools to instantiate and manage Unix-like . 
+
+- We use the `ip add` to see wheather the machine is the receu=iveing an IP address automatically from our network via bridge/ adapter. 
+-  We can also check the connectivity with the  by using the ping command .
+-   We can change the default password of the kali with the new password `passwd kali`.
+-  We sholud always update the source and the package with the `sudo apt update` .
+-  `AMD64` is the 64 bit architecture of the kernal . It is the capable of performing the most secure computation and powerful computation .
