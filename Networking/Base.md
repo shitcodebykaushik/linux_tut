@@ -238,7 +238,18 @@ In the all terminal our work will be totally different  .
 It is designed for the rapid prototyping and development and intented to make exploit writing as simple as possible .
 Pwndgb printsout the usefull information such as registers and assembly code with each brealpoint or error.
 - GDB plugging makes GDB suck less.
+# Understanding the importance of the reconnaissance 
+-  The first chain of the cyber kill chain is the reconnaissance within their target organizations .
+- Reconnaissance stands for the information gathering .
+- `Passive:` Uses an indirect approcah and does not engage the target machine 
+- `Active:` Directlly engages the target to gather specific details .
+- Footprinting is the process of gathring information as much as it can be . In the footprinting main objective is to obtain the specific details about the target ,it helps us too understand the infrastructure of the and helps to identify the security vulnerabilities of the target machine.
+- Sock puppet means to create the fake identity of the people to gather the information .
+- Theire are few tools that can be used by the penetration tester to anonymize their traffic 
+   - VPN allows a user to send the data to securely across an insucure network such as internet . For example you need to use a tool to perform a scan on a target server on the internet but you do not dont want your target machine to know the actual traffic ,using vpn server is located in another country can be beneficial to you .
 
+   - `Proxychains`  A proxy is system server such as a server that sits between a source and destination host on network . 
+   - The onoin Router (TOR)
 # Pipleine 
 In the pipeline our end product is deployed at the Environement .
 - Source code and version control is the start of our pipleine .
