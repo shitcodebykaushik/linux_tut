@@ -392,3 +392,12 @@ In the context of web infrastructure .
 -   We can change the default password of the kali with the new password `passwd kali`.
 -  We sholud always update the source and the package with the `sudo apt update` .
 -  `AMD64` is the 64 bit architecture of the kernal . It is the capable of performing the most secure computation and powerful computation .
+- OWASP stands for the `open web application security project` .  It is the organization that focuses on the improving the  security of the web application . 
+- OWSAP juice shop and the OWSAP web Broken Web Application projects within our labs .
+- Docker pretty good privacy  also know as the `docker pgp` key it is used to insure the authenticity and the integrity of the software packages and the container images .
+-  Once the enitre metasploita is downloaded in the system them there will be need of the update system in the entire vm kali . So that it will be updated once in the row. 
+
+- `cd metasploit-framework` here  you will find all the available things of the metasploits  available in the filesystem .
+-  Then the next thing is to install the gem bundling . Ruby  gem bundling is a package manager that is designed to simlify  the process of managing dependencies for the ruby project .  The bundler reads the gem file (config file) and resolves the dependencies specified therin by ensuring that all the gems  are installed and at the correct versions . It similiar to the `NPM and Cargo` .
+-  Once these things are done then its tym to intialize the metasspoilt database and run the command. `sudo msfdb init` 
+- `msfconsole` This will launch the console of the metaspolit .
