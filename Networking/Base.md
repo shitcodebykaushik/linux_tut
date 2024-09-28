@@ -401,3 +401,24 @@ In the context of web infrastructure .
 -  Then the next thing is to install the gem bundling . Ruby  gem bundling is a package manager that is designed to simlify  the process of managing dependencies for the ruby project .  The bundler reads the gem file (config file) and resolves the dependencies specified therin by ensuring that all the gems  are installed and at the correct versions . It similiar to the `NPM and Cargo` .
 -  Once these things are done then its tym to intialize the metasspoilt database and run the command. `sudo msfdb init` 
 - `msfconsole` This will launch the console of the metaspolit .
+- Once these things are done  then chek the connection `db_status`
+- While using this metsploit we primarly use the `msfconsole`.
+- `Exploit` is a piece of the code that uses the vulnerability present on the target system .
+-`Vulnerability` A design, coding or logic flaw affecting the target system. The exploration of a vulnerability can result in the disclosing the confential information .
+- `Payloads` It is the code that will run on the target system this happen when we want to take the  advantage of the explot to have the result which we want to have .
+-  `Auxiliary` All the supporting module such as scanner crawker and fuzzer can be found here.
+- ` Encoder` This will allow you to encode the exploit and payload in the hope that signature-based antivirus solution may miss them .
+- `Signature-Based` antivirus have the security solution have a databse of the knowm threats. They detect threats by compating the suspicious files to the database and raise an alert if there is a match .
+- Encoder have the limited sucess rate as antivirus solution have .
+- Exploits are the neatly organized by target system .
+- `NOPs` (No Operation) do nothing literalyy.
+- They are respresented in the intel x86 CPU family thay are represented with the 0x90,following which the CPU will do nothing for the one cycle . They are often uses as a buffer to achieve consisten payload size .
+- `Payloads`  These are the code that will run in the trarget machine ,exploit will leverge a vulnerability on the target system but to achieve this we need playload .
+    - Singles are the self contained payloads that do not need to download an additonal component to run .
+    -  Stagers are responsible for the setting up the connection channel between mataspolit and the target machine .
+    -  Stages are downloaded by the stagers this allows you to use larger sized payloads .
+- `Post`  This module is usefull in the final stage of the pentesting .
+- `Envaison` This is the module that is usefull to create the payloads that can evade anti-virus (AV) software on the target machine .
+- Once the vulnerabilities has been successfully exploited, a session will be created this is the communication channel between the target system and the metasploit .
+- `background or ctrl+z` This is use to background session .
+- 
