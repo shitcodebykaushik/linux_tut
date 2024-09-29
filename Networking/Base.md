@@ -42,7 +42,32 @@ Logical address is use to provide orders to the networks categorising them and a
 The data link layer focuses on the physical addressing of the transmission. It receives a packet from the network layer (that includes the IP address for the remote computer) and adds in the physical (MAC) address of the receiving endpoint. Inside every network enabled computer is a Network Interface Card (NIC) which comes with a unique MAC (Media Access Control) address to identify it.
 
 MAC addresses are set by the manufacturer and literally burnt into the card; they can't be changed -- although they can be spoofed. When information is sent across a network, it's actually the physical address that is used to identify where exactly to send the information.
-
+# NMAP 
+- It is one of the best tools available for the network  discovry .
+- It is used by the millions fucker in the world . So you along with me are the shitt .
+- Nmap stand for the network mapper .
+-  Nmap used the raw packets in novel ways to determine what hosts are available on the network and what services they are offering what OS they are running what type of the packets are in the use .
+- The output of the NMAP is a list of the scanned scanned services and the  most important things among them are the intersting port table . Which contains the information like port number and the service and the protocol,name ,state . Each state have the different name and  
+ - `Open` stands for the  application on the target machine os listening for connections/packets on that port .
+ - `Filtered` means that the firewall and the other network obstacles are blocking the ports so that nmap cannot tell whether it is open or closed .
+ - `Closed`ports means that no application is listening on the port .
+ - Everything on the Nmap is the comandline . The simplest case is  to specify the target IP address or the hostname for scanning . 
+ -  When we provide the hostname then it is resolved via Domain Name system  to determine the IP address and the scanning will happen on the first one . To scan all the port we use the command `--resolve-all`
+ - NMAP used the CIDR notation to scan whole networks .
+ -  Nmap accepts multiple host specifications on the command line and they dont need to be of the same type .
+ - By default Nmap will discover your DNS server from your resolv.conf file or the registry.
+ - Host discovery 
+    - -sl (List scan)
+    - -sn (No port scan)
+    - -Pn (No ping) This options will skips the host discovery stage altogether .
+    -  - PS (TCP SYN Ping) In this Nmap does not care wheather the port is open or closed ot will send the empty tcp packet to the target with the SYN flag and theThe SYN flag suggests to the remote system that you are attempting to establish a connection. Normally the destination port will be closed, and a RST (reset) packet sent back. If the port happens to be open, the target will take the second step of a TCP three-way-handshake by responding with a SYN/ACK TCP packet. The machine running Nmap then tears down the nascent connection by responding with a RST rather than sending an ACK packet which would complete the three-way-handshake and establish a full connection. The RST packet is sent by the kernel of the machine running Nmap in response to the unexpected SYN/ACK, not by Nmap itself. 
+    - -PA  This is similar to the syn ping but here we use the tcp ack ping . 
+       The reason for using the both the ack and the syn is to maximize the  bypass of the firwalls .
+      - Another common type of the of the firwalls uses statefull rules that drop the unexpected packets. It solution is simple to use the both the rule to pass the firewalls. 
+     - PU  is the another host dicovery option in the Udp ping which send the a udp packets to the given port . 
+     - -Py options send the sctp packet containing the minimal INIT chunk . Normally the destination Port is closed and an ABORT chunk will be sent back to if the ports happen to be the open then the target will take the second option of the init-ack chunk .
+     Nmap doesnt care wheather the port is open or closed .
+     - 
 # Encapsulation 
 -  The header added by the Network Layer would include things like the source and destination IP addresses.
 
