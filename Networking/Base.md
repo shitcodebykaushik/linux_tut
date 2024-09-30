@@ -1,5 +1,5 @@
 # Day 1
-
+- Packets are the building blocks for the networking communication . It allows for seamless communication over the network .
 - Port scanner is software application program that scans a server or network for the open ports .
 - Port 20 (UDP) — File Transfer Protocol (FTP) for data transfer
 - Port 22 (TCP) — Secure Shell (SSH) protocol for secure logins, FTP, and port forwarding
@@ -130,7 +130,8 @@ MAC addresses are set by the manufacturer and literally burnt into the card; the
  As of now i dont have to touch this section . Huh....
 # Encapsulation 
 -  The header added by the Network Layer would include things like the source and destination IP addresses.
-
+-  Header contains the control information such as the source and the detination ,checksum (used for error detection), protocol identifier (specifies the type of the protocol used to encapsulate the data).
+- Payload is the actual data or message being transmitted  it can be anything from the text to image to video ...
 -   The header added by the Transport Layer would include (amongst other things) information specific to the protocol being used .
 - The data link layer also adds a piece on at the end of the transmission, which is used to verify that the data has not been corrupted on transmission; this also has the added bonus of increased security, as the data can't be intercepted and tampered with without breaking the trailer .
 
