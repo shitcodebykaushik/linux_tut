@@ -103,6 +103,31 @@ MAC addresses are set by the manufacturer and literally burnt into the card; the
    - `--osscan-guess; --fuzzy (Guess OS detection results)`
    - `--max-os-tries (Set the maximum number of OS detection tries against a target)`
    - `
+
+
+# Wireshark 
+ - It is a packet analyzer that captured the packet data in as much detail as possible . It is a kind of the measuring device for examining whats happing inside a network cable .
+ - It captures the data from the live network traffice and analyse it in the detailed overview. It filter the packets on the many cretiria .
+ - Colorize packets display based on filters .
+ - It is not an intrusion detection system. It will not warn you when someone does strange things on your network . It doesnt send the packets on the network or do orthe active things .
+ - It can decode hundred of the different protocols .
+ - Allow the precise filtering .
+ - Drcode the various network protocol .
+ - It helps to monitor the network traffic for sensitive data leaving the network ensuring the complience with the data protection regulations . `(DLP)`
+ - It helps to  identify the violation of `AUPs` such as the unauthorized use of the bandwidth or to access the prohibited websites .
+ - Helps to identify the traffic associated with the  malware such as the command-and-control or data exfiltration.
+ - It helps you to know how the efficiently different protocol are being used.identifying potential area of the optimization .
+ - `Bot` A bot in the context of cybersecurity is a compromised computer or device that has been infected with malicious software (malware) .
+ - `Zombie` A zombie is a compromised computer or device that has been infected with malware and is now under the control of the botnet's operator.  
+ - `C&C` It stands for the command-and-control and it is the channel of communication between the compromised computer and the attcker command-and-control server . The attacker use this channel to communicate with the compromised system .
+ - Comprised means which has been successfully breached by the attacker .
+ - `wireshark` This command will start the monitoring
+ - `killall wireshark` This command will kill the running process  and will stop eveything .
+# CEWL 
+- Stands for the custom  wordlist generator. A tool used for creating  custom wordlist or dictionaries that can be used for password cracking ,phising attacks and the other types of security testing .
+# Clang 
+-  It is the cpmipler front end for the C language family. It is faster then the gcc .
+ As of now i dont have to touch this section . Huh....
 # Encapsulation 
 -  The header added by the Network Layer would include things like the source and destination IP addresses.
 
