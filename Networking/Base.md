@@ -67,7 +67,42 @@ MAC addresses are set by the manufacturer and literally burnt into the card; the
      - PU  is the another host dicovery option in the Udp ping which send the a udp packets to the given port . 
      - -Py options send the sctp packet containing the minimal INIT chunk . Normally the destination Port is closed and an ABORT chunk will be sent back to if the ports happen to be the open then the target will take the second option of the init-ack chunk .
      Nmap doesnt care wheather the port is open or closed .
-     - 
+     -  The only barrier to port scanning is the mastery of the knowledge of the all tools .
+     -  All of the insights of the nmap are based on the packets returned by the target .
+     - Most of the tyme we can perform any of the one method of the scannig .
+      - UDP scan (-sU) and any one of the SCTP scan types (-sY,-sZ) can be combined .
+      - `-sS` (tcp syn) is the default and the most popular scan for the good reasons .
+      - `-sT` (tcp connect scan )  TCP connect scan is the default TCP scan type when SYN scan is not an option. This is the case when a user does not have raw packet privileges. Instead of writing raw packets as most other scan types do, Nmap asks the underlying operating system to establish a connection with the target machine and port by issuing the connect system call. 
+      - `-sU (UDP)`UDP scan is activated with the -sU option. It can be combined with a TCP scan type such as SYN scan (-sS) to check both protocols during the same run. 
+      - `-sY (SCTP INIT scan)`SCTP is a relatively new alternative to the TCP and UDP protocols, combining most characteristics of TCP and UDP, and also adding new features like multi-homing and multi-streaming. This is ofent regarded as the half opening .
+
+      - `sF ,-sX (tcp NULL FIN AND xmas scans)` These are the three scan type that exploits a subtle loophole in the TCP RFC to differentiate between open and closed ports .
+      - `sA (TCP ACK scan)`  It never detemines the open ports  It is used to map out firewall rulesets, determining whether they are stateful or not and which ports are filtered. 
+      - `-sW` This is for the window scan and it is same like ACK .
+      - `-sM` This is 
+      - `sZ` This is the more advance sctp scan .
+      - `sO` This is the ip protocol helps you to determine which ip protocols are supported by the targeted machine  . Protocol scan works on the similiar fashion to Udp scan .
+      - `-b` This allow user to connect one FTP server, then ask that files be sent to third-party server. Such festures are the ripe for the abuse to the many levels .
+      - By default Nmap will scan the random number OF first 1000 ports for each protcols. 
+      - We cabn scan combintion of the protocol Udp and the tcp .
+      - `F` this reduced the number of the ports scannig from 1000 to the 100 .
+      - `r` By defult nmap randomized the scanned port order but with the help of this we can fix the sorting of the scanned .
+      - `--port-ratio` scans all ports in nmap -service file with a ratio greated than the one given must be between 0.0 and 1.0 .
+      - `top-ports` Scan the <n> highest ratio ports found in the namp-servoce file after excluding all ports .
+      -  Version detection interrogates those ports to determine more about what actually runnig .
+      -  When the RPC servie are discovered .RPC grinder is automatically used tod determine the rpc program . 
+       - `-sV (Version detection)`  Enable the version detection .
+       - `--allports (Don't exclude any ports from version detection)`
+       - `--version-intensity <intensity> (Set version scan intensity)`
+       - `--version-light (Enable light mode)` 
+       - `--version-all (Try every single probe)` --version-all (Try every single probe) .
+       - `--version-trace (Trace version scan activity)` Nmap to print out extensive debugging info about what version scanning is doing .
+- `OS detection` One of Nmap's best-known features is remote OS detection using TCP/IP stack fingerprinting. Nmap sends a series of TCP and UDP packets to the remote host and examines practically every bit in the responses. After performing dozens of tests such as TCP ISN sampling, TCP options support and ordering, IP ID sampling, and the initial window size check, Nmap compares the results to its nmap-os-db database of more than 2,600 known OS fingerprints and prints out the OS details if there is a match. 
+   - `-O (Enable OS detection)`
+   - `--osscan-limit (Limit OS detection to promising targets)`
+   - `--osscan-guess; --fuzzy (Guess OS detection results)`
+   - `--max-os-tries (Set the maximum number of OS detection tries against a target)`
+   - `
 # Encapsulation 
 -  The header added by the Network Layer would include things like the source and destination IP addresses.
 
