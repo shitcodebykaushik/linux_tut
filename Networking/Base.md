@@ -1,4 +1,5 @@
 # Day 1
+- We hide all the technical infrastructure from the end users not from the network researcher .
 - Packets are the building blocks for the networking communication . It allows for seamless communication over the network .
 - Port scanner is software application program that scans a server or network for the open ports .
 - Port 20 (UDP) — File Transfer Protocol (FTP) for data transfer
@@ -42,6 +43,26 @@ Logical address is use to provide orders to the networks categorising them and a
 The data link layer focuses on the physical addressing of the transmission. It receives a packet from the network layer (that includes the IP address for the remote computer) and adds in the physical (MAC) address of the receiving endpoint. Inside every network enabled computer is a Network Interface Card (NIC) which comes with a unique MAC (Media Access Control) address to identify it.
 
 MAC addresses are set by the manufacturer and literally burnt into the card; they can't be changed -- although they can be spoofed. When information is sent across a network, it's actually the physical address that is used to identify where exactly to send the information.
+# Defensive Security  (Blue Team)
+- Offensive security means that focuses on the breaking into systems .
+- Breaking into the sytems are achived thorugh exploiting bugs abusing insecure setup and taking the advantage of unenforced access control policies  among other things .
+- At defensive we are supposed to protect the system from the attack .
+  -  Firewall control what network traffic can go inside the network .
+  -  Ips block any traffic that matches present rules and attacks signatures .
+- Processing the data aims to arrange them into a format suitable for analysis .
+ - Digital Forensics and Incident Response (DFIR) 
+  - Forensics is the application of science to investigate crimes and establish facts .
+  - An incident always refers to the data breah . 
+  - Malware stands for the malicious software . software refers to the program .
+  - Virus is a piece of code (part of a program) that attaches itself to a program. 
+  - Trojan Horse is a program that shows one desirable function but hides a malicious function underneath .
+  - Ransomware is a malicious program that encrypts the user’s files.  
+- There are many open-source database  out there ,like AbuseIPDB and Cisco Talos intelligence where you can perform a reputation and location check .
+ # Careers in the Cyber 
+ - Security analysts are integral to constructing security measures across organisations to protect the company from attacks. Analysts explore and evaluate company networks to uncover actionable data and recommendations for engineers to develop preventative measures .
+ - Security engineers develop and implement security solutions using threats and vulnerability data - often sourced from members of the security workforce
+ - Incident responders respond productively and efficiently to security breaches.  
+ - Be the pentester .
 # NMAP 
 - It is one of the best tools available for the network  discovry .
 - It is used by the millions fucker in the world . So you along with me are the shitt .
@@ -102,9 +123,40 @@ MAC addresses are set by the manufacturer and literally burnt into the card; the
    - `--osscan-limit (Limit OS detection to promising targets)`
    - `--osscan-guess; --fuzzy (Guess OS detection results)`
    - `--max-os-tries (Set the maximum number of OS detection tries against a target)`
-   - `
-
-
+-  Most imporatant thing which we do is with the NMAP is find the live computers . 
+-  The second things is about finding the live services . 
+-  Trying to scan network in the offline mode creates the unnecessary  noise .
+-  There are different approcahes used by the NMAP to discover the live hosts .
+   - ARP scan This scan uses the ARP request to discover the services .
+   - ICMP scan This scan uses the ICMP request to discover the services .
+   - TCP/UDP ping scan : This scan sends packets to the TCP/UDP ports to determine the live hosts .
+- The  nmap goes through the  9 steps to give the final result .
+   - Enumerate the target 
+   - Discover live  hosts 
+   - Reverse-DNS llokup 
+   - Scan ports
+   - Detect versions
+   - Traceroute 
+   - Scripts 
+   - Write Outputs 
+- A `network segement` is a group of computers  connected using shared medium .
+- The network segments refers to the physical network and the while the subnetworks refers to the logical connection .
+- A subnet has its own IP address and is connected to more extensive network via router , 
+- Arp is link layer protocol and ARP packets are bouund to their subnet . 
+- Nmap  default is to reverse DNS online hosts . By default NMAP uses the online hosts .
+- If you want to use a specific DNS server, you can add the `--dns-servers DNS_SERVER` option. 
+- You can use the option `-R` to query the DNS server even for offline hosts.
+-  These are the few important things .
+   - Link Layer 
+      - ARP,Ethernet (80.3) WIFI (802.11),DSL,Bluetooth .
+   - Netowrk Layer 
+      - IPv4,ICMP,IPv6,IPsec .
+   -  Transport layer 
+      -  tcp,udp 
+   - Application layer 
+      - HTTP, HTTPS,SMTP,Telnet,SSH .
+- A remote server refers to the computer system running continuously to serve the clinets.
+- Injection attacks refers  to vulnerabilities in the web application where user can insert malicious code as a part of their input .
 # Wireshark 
  - It is a packet analyzer that captured the packet data in as much detail as possible . It is a kind of the measuring device for examining whats happing inside a network cable .
  - It captures the data from the live network traffice and analyse it in the detailed overview. It filter the packets on the many cretiria .
