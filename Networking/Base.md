@@ -157,6 +157,10 @@ MAC addresses are set by the manufacturer and literally burnt into the card; the
       - HTTP, HTTPS,SMTP,Telnet,SSH .
 - A remote server refers to the computer system running continuously to serve the clinets.
 - Injection attacks refers  to vulnerabilities in the web application where user can insert malicious code as a part of their input .
+ - What does syn means in network security .
+  - Syn packets are normally generated when the client attempts to start a TCP connection to a server and the server exchange a series of messages  .
+    -  The server acknowledges this request by sending SYN-ACK back to the client .
+    - The client responds with an ack and the connection is established . This is the three-way handshake , the foundation of this is establised usig the tcp protocol.
 # Wireshark 
  - It is a packet analyzer that captured the packet data in as much detail as possible . It is a kind of the measuring device for examining whats happing inside a network cable .
  - It captures the data from the live network traffice and analyse it in the detailed overview. It filter the packets on the many cretiria .
