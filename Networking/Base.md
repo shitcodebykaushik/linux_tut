@@ -161,6 +161,19 @@ MAC addresses are set by the manufacturer and literally burnt into the card; the
   - Syn packets are normally generated when the client attempts to start a TCP connection to a server and the server exchange a series of messages  .
     -  The server acknowledges this request by sending SYN-ACK back to the client .
     - The client responds with an ack and the connection is established . This is the three-way handshake , the foundation of this is establised usig the tcp protocol.
+- Working of the NMAP 
+  `nmap 10.10.12.13/29 means `
+  - nmap: This is the command-line tool used for network exploration and security auditing.
+10.10.12.13/29: This specifies the target IP address range. It uses CIDR notation to define a subnet. 
+  - Nmap will scan all the possible IP addresses within the 10.10.12.13/29 subnet. It will try to determine which hosts are active and what services or ports are open on those hosts. 
+- `0-host up`  means they are actually down or offline .
+- - `Tut 01` 
+      - `nmap <ipaddress>` This will return the all running services in the specified network
+      - `namp -sV <ipaddress>` This will return the specified version of the runnig version .
+      - `nmap -o <ipaddress>` This will detect the os of the specified IP address .
+      - `nmap -p <Port_number > <ipaddress>` This will scan the specified port number on the address .
+      - `nmap -sS <IPADDRES>` This is the half-often scan as it doesnt complete the tcp handshake .
+      
 # Wireshark 
  - It is a packet analyzer that captured the packet data in as much detail as possible . It is a kind of the measuring device for examining whats happing inside a network cable .
  - It captures the data from the live network traffice and analyse it in the detailed overview. It filter the packets on the many cretiria .
