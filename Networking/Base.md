@@ -180,7 +180,10 @@ MAC addresses are set by the manufacturer and literally burnt into the card; the
       - Scan with the slow helps us to avoid the detection by the network detection tool .
       - Banner grabbing helps to detect the what services running on open ports .
       -   `nmap --script=banner <ipaddress>` This will list the banner .
-      -   `nmap -6 <ipv8 address>`
+      -   `nmap -6 <ipv8 address>` 
+      -   `nmap --script-help all` This will list the pre built script .
+      -   `nmap -D RND:10 <IP ADDRESS>` this will show that the target has been scanned by the multiple target .
+      
 # Wireshark 
  - It is a packet analyzer that captured the packet data in as much detail as possible . It is a kind of the measuring device for examining whats happing inside a network cable .
  - It captures the data from the live network traffice and analyse it in the detailed overview. It filter the packets on the many cretiria .
