@@ -173,7 +173,14 @@ MAC addresses are set by the manufacturer and literally burnt into the card; the
       - `nmap -o <ipaddress>` This will detect the os of the specified IP address .
       - `nmap -p <Port_number > <ipaddress>` This will scan the specified port number on the address .
       - `nmap -sS <IPADDRES>` This is the half-often scan as it doesnt complete the tcp handshake .
-      
+      - `nmap -A <ipaddress>` This is the aggressive scan .
+      - `nmap -sU <IP>` This will send the udp packets to the ip.
+      - `nmap -T4 <ip>` This is the method for the fasted scan. 
+      -  `nmap -T1,0 <ip>` This is the method for the slowest scan .
+      - Scan with the slow helps us to avoid the detection by the network detection tool .
+      - Banner grabbing helps to detect the what services running on open ports .
+      -   `nmap --script=banner <ipaddress>` This will list the banner .
+      -   `nmap -6 <ipv8 address>`
 # Wireshark 
  - It is a packet analyzer that captured the packet data in as much detail as possible . It is a kind of the measuring device for examining whats happing inside a network cable .
  - It captures the data from the live network traffice and analyse it in the detailed overview. It filter the packets on the many cretiria .
