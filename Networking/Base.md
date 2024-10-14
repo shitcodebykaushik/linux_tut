@@ -622,3 +622,32 @@ In the context of web infrastructure .
 - `Unsetg` is use to reset the value.
 - `set LPORT 6666` This will set the Lport to the  6666 If you're using a reverse TCP payload, setting LPORT to 6666 means your Metasploit instance will listen on port 6666 for the incoming connection from the exploited target. 
 - `
+# Wireshark 
+- TCP connect scan in a nutshell 
+   - Relies on the three-way handshake 
+   - usually conducted with the nmap `+sT` command
+   - used by the non privileged user .
+   - Usually has a windows size larger then the 1024 bytes as the request expects some data due to the nature of the protocol.
+- TCP SYN in a nutshell 
+  - Doesnt rely on the three way handshake 
+  - Usually conducted with the nmap -sS command 
+  - Usually by privileged users .
+  - Usually have a size less than or equal to 1024 bytes as the request is not finsihed and it doesnt expect to receive the data .
+- UDP Scans 
+  - Doesnt require a handshake process 
+  - No prompt for open ports 
+  - ICMP error message for close ports 
+  - Usually conducted with the `namp -sU` command 
+- `tcp.flags.syn ==1 and tcp.flags.ack ==0 and tcp.window_size>1024`
+- `TCP connect` is used to scan the tcp port 80.
+- UDP scan uses the icmp packets .
+
+- ARP stads for the Address Resolution Protocol is the technologies responsible for allowing the device to identify themselves in the network .
+- ARP posising is the type of the attack that involves the network jamming/manipulating  by sending malicious packets to the default gateway .
+- ARP works on the local network 
+- Enable the communication between MAC address 
+- Not a secure protocol
+- Not a routable protocol 
+-  It doesnt have an authentication function 
+-  Common patterns are requests and the response announcement and graduated packets .
+- 
