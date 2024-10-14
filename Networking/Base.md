@@ -650,4 +650,10 @@ In the context of web infrastructure .
 - Not a routable protocol 
 -  It doesnt have an authentication function 
 -  Common patterns are requests and the response announcement and graduated packets .
-- 
+
+# Cyber research 
+- CVE number are assigned when the vulnerability are discovered .
+- To copy an entire directory using SCP we would use the -r
+- To list the current partion is using fdisk we would use -l switch .
+-  We use the -B switch to make the backup of the file .
+- nc -l -p 12345 is use to start the netcat in listen mode using the port 12345 .
