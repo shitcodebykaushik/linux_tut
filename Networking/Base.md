@@ -183,7 +183,12 @@ MAC addresses are set by the manufacturer and literally burnt into the card; the
       -   `nmap -6 <ipv8 address>` 
       -   `nmap --script-help all` This will list the pre built script .
       -   `nmap -D RND:10 <IP ADDRESS>` this will show that the target has been scanned by the multiple target .
-      
+- Subnet: Machine_ip/30 will scan the 4 ip addresses .
+- Range: 10.11.12.15-20 will scan 6 Ip addresses .
+- list : We can it in the list form also with the different options available .
+- Subnet is the short form of the subnetworks which is the logical subdivision of the larger network . It increase the organisation efficieny and the security of the network as well as. 
+- Subnet mask helps to define which portion is used to define which portion of the IP address identifies the netwoek and which portion identifies the specific device within that network .
+
 # Wireshark 
  - It is a packet analyzer that captured the packet data in as much detail as possible . It is a kind of the measuring device for examining whats happing inside a network cable .
  - It captures the data from the live network traffice and analyse it in the detailed overview. It filter the packets on the many cretiria .
@@ -577,6 +582,7 @@ In the context of web infrastructure .
 -  Then the next thing is to install the gem bundling . Ruby  gem bundling is a package manager that is designed to simlify  the process of managing dependencies for the ruby project .  The bundler reads the gem file (config file) and resolves the dependencies specified therin by ensuring that all the gems  are installed and at the correct versions . It similiar to the `NPM and Cargo` .
 -  Once these things are done then its tym to intialize the metasspoilt database and run the command. `sudo msfdb init` 
 - `msfconsole` This will launch the console of the metaspolit .
+
 - Once these things are done  then chek the connection `db_status`
 - While using this metsploit we primarly use the `msfconsole`.
 - `Exploit` is a piece of the code that uses the vulnerability present on the target system .
@@ -590,11 +596,29 @@ In the context of web infrastructure .
 - `NOPs` (No Operation) do nothing literalyy.
 - They are respresented in the intel x86 CPU family thay are represented with the 0x90,following which the CPU will do nothing for the one cycle . They are often uses as a buffer to achieve consisten payload size .
 - `Payloads`  These are the code that will run in the trarget machine ,exploit will leverge a vulnerability on the target system but to achieve this we need playload .
-    - Singles are the self contained payloads that do not need to download an additonal component to run .
+    - Singles are the self contained payloads that do not need to download an additonal component to run . Windows/x64/pingback_tcp are among single tcp.
     -  Stagers are responsible for the setting up the connection channel between mataspolit and the target machine .
     -  Stages are downloaded by the stagers this allows you to use larger sized payloads .
 - `Post`  This module is usefull in the final stage of the pentesting .
 - `Envaison` This is the module that is usefull to create the payloads that can evade anti-virus (AV) software on the target machine .
 - Once the vulnerabilities has been successfully exploited, a session will be created this is the communication channel between the target system and the metasploit .
 - `background or ctrl+z` This is use to background session .
-- 
+- `Modules` In the framwork of the metasploit we find the whole list of the supporting modules available .
+- `Encoder` This will allow you to exploit and the payload in the hope that signatures based antivirus solution may miss them . Signatures-based antivirus have database solutions have a database of known threats . They perform the additional checks to suspect the virus . That why the  encoders will have the limited succes rate .
+-`Evasion` With the evasion there is less succes rate or more succes rate as it wiill try to evade the antivirus .
+- `Exploit` Neatly organized by target system .
+- `Nops` This do nothing literally they are represented in the intel x86_CPU family with the 0x90,following which the cpu will do nothing for one cycle. They are often used as the buffer to achive the consistent payload size .
+- `use` This is the important command which can be used to tell the console which modules you want to work with it .
+- `Show payload` This will show the payload available in the modules .
+- `Auxiliary telnet`Auxiliary telnet module is a tool used for various tasks related to the Telnet protocol, but it doesn't directly exploit a vulnerability to gain control of a system but it doesn't exploit a vulnerability to gain control of systems instead it helps to gain the information and allow the basic interactions .
+- `Telnet` is a type of the protocol that helps you to lets you access and control a computer remotely over the network . Telenet use the client server model .Once connected it sends your keyboard commands to clients programm on your local machine and the computer. It relies on the tcp to ensure the reliable data transmission between the your computer and the remote system.
+- If we want to know who provided the which module just give type the `info fullpath`
+- `RHOSTS` This is the Remote host the ip address of the target system. A single IP address or a netwoek range can be set. This will support the CIDR classless inter domain routing .
+- `RPORT` Remote port the port on the target system the vulnerable application is running on .
+-`LHOST:` “Localhost”, the attacking machine (your AttackBox or Kali Linux) IP address.
+- `LPORT:` “Local port”, the port you will use for the reverse shell to connect back to. This is a port on your attacking machine, and you can set it to any port not used by any other application. 
+- `unset all` This will Flush all the data .
+- You can use the `setg` command to set values that will be used for all modules.
+- `Unsetg` is use to reset the value.
+- `set LPORT 6666` This will set the Lport to the  6666 If you're using a reverse TCP payload, setting LPORT to 6666 means your Metasploit instance will listen on port 6666 for the incoming connection from the exploited target. 
+- `
