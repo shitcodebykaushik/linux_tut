@@ -13,5 +13,12 @@
 - Netcat is the one of the utility that will allow us to handle the connection and allow the attacker to interact with the exposed shell .
 - Rlwrap is the small utility that uses the GNU readline library to providing editing keyboard and history .
 - Ncat is the improved version of the Netcat distributed by the NMAP,it provides the extra fetures like the encryptions ssl .
--  Socat is the utility that allows you to create socket connections between two data sources .
+- Socat is the utility that allows you to create socket connections between two data sources .
+- The revese shell creates named pipe using mkfifo and connects to the attacker via Telnet on the `ATTACKET_IP`
+- `PHP` reverse shell payload method is a common scripting language that uses the exec,shell_exec,system,passthru and the popen function to execturs commands remotely through TCP connection .
+-  A web shell is a scrip written in a language supported by a compromised web server that executes commands through the web server itself . 
+-  A web shell is usually a file containing the code that executes commands and the handles files .
+- pown-Shell is the minimalistic single file php web shell that allow remote command execution .
+- `b374k` shell is rich php web shell with the file managemnet and the command exection .
+- c99 shell is robust php web shell with the extensive functionality .
 - 
