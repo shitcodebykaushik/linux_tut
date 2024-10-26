@@ -1,0 +1,17 @@
+- A shell is the software that allows a user to interact with the os . It can be graphical interface but it usucally be the command- line interface and this depends on the operating system .
+- In cybersecurity it usually  refers to the specific session an attacker uses when the accessing a compromised system allowing them to run commands and execute software . 
+-  Shell helps the attacker to execute commands remotely on the target machine .
+-  It helps the attacker to esclate the privileges to more eleveted or administrative access .
+-  Once the attacker access to execute commands through the obtained shell  they can explore the system to read and copy the data from it  .
+-  Post-Exploation Activities as the shell has been accessed attacker can perform the following actions such as the deploying the malware creating the hidden account etc .
+- Access the system to access the systemn   network . Depending on goal of the attacker
+- A reverse shell is also called connect back shell is one of the most popular techniques for gaining access to the system in the cyber.
+-  A revese shell will connect back to the attacker machine . This machine will waiting for a connection .
+- nc is the netcat listner 
+-  Bind shell will bind a port on the compromised system and listen for the connection, when this connection occurs,it exposes the shell session so the atacker can execute the commands remotely .
+-  `1024` is the port number which requirs root access or privilged permissions .
+- Netcat is the one of the utility that will allow us to handle the connection and allow the attacker to interact with the exposed shell .
+- Rlwrap is the small utility that uses the GNU readline library to providing editing keyboard and history .
+- Ncat is the improved version of the Netcat distributed by the NMAP,it provides the extra fetures like the encryptions ssl .
+-  Socat is the utility that allows you to create socket connections between two data sources .
+- 
