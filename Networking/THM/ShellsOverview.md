@@ -22,3 +22,18 @@
 - `b374k` shell is rich php web shell with the file managemnet and the command exection .
 - c99 shell is robust php web shell with the extensive functionality .
 - 
+
+
+
+# Web Basic 
+- URL stand for the uniform resource locator . It is a string of characters used to identify a resource on the internet .
+- `Schema+user+host/domain+port+path+querystring+fragment`. 
+- Schema are the protocol use to acces the website .
+- `User` Some url include the user details  for the sites authentication . 
+- `Host/Domain` It is the most important part of the URL it tells you which part of the website you are accesing . Every domain has to be unique and is registered through domain registerars .
+- `Port` It is the number of the port where the website is hosted . It like the doorway to use for the communication . 
+- `Path` The path points to the specific file or directory on the server .
+- `Query` string is the part of the URL that provides additional information about the resource .
+- `Fragments` Starts with the hash symbol (#) and contains the id of the element on the page .It helps to a specific section of the webpage .
+- `typosquatting` is a fraudulent act of using a common or misspelled domain name to create a new one .
+- 
