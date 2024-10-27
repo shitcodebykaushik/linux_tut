@@ -36,4 +36,11 @@
 - `Query` string is the part of the URL that provides additional information about the resource .
 - `Fragments` Starts with the hash symbol (#) and contains the id of the element on the page .It helps to a specific section of the webpage .
 - `typosquatting` is a fraudulent act of using a common or misspelled domain name to create a new one .
+-  `HTTP`  message are the packets of the data that are exchanged between user and the client and the web server .
+-  `HTTP Request` These are the sent from the user to trigger actions on the web application .
+-  `HTTP Response` These are the messages sent from the server to the user .
+-  `Start` it like the introduction of the message 
+-  `Headers`  these are made up of key value pairs
+-  `Empty`  it is a little divider that seprated the header from the body .0  
+-  `Body`  these is where the actual data are stored .
 - 
