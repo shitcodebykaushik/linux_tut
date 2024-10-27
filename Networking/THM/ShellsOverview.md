@@ -53,4 +53,11 @@
 -  `300-399`   Redirection error .
 -  `400-499` This means the error is with the request .
 -  `500-599` This means the error is within the server .
-- 
+- Http header improve the overall security of the web application by providing the mitgations against attacks like Cross-Site Scripting .
+- Content Security Policy  in this we have the default src which specify the default policy `script-src` It specify the policy for where scripts can loaded from the which is self along with the scripts , style-src is the policy for the css styles .
+- `Strict Transport Security (hSTs)` This will always ensure that web browser will always connect over the HTTPS .
+   -max-age is the expiry time in seconds for this setting
+   - includeSubDomains is to include the subdomains in the hsts policy.
+   - preload is the optional setting allow the websites to be included in preload lists 
+- X-Content-Type-Options 
+- Referre-Policy 
