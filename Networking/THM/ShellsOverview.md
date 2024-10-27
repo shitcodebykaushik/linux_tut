@@ -37,10 +37,20 @@
 - `Fragments` Starts with the hash symbol (#) and contains the id of the element on the page .It helps to a specific section of the webpage .
 - `typosquatting` is a fraudulent act of using a common or misspelled domain name to create a new one .
 -  `HTTP`  message are the packets of the data that are exchanged between user and the client and the web server .
--  `HTTP Request` These are the sent from the user to trigger actions on the web application .
+-  `HTTP Request` These are the sent from the user to trigger actions on the web application . This is the first point of the contact .
 -  `HTTP Response` These are the messages sent from the server to the user .
 -  `Start` it like the introduction of the message 
--  `Headers`  these are made up of key value pairs
+-  `Headers`  these are made up of key value pairs,it contains the extra information to be conveyed to the web server about the request 
 -  `Empty`  it is a little divider that seprated the header from the body .0  
 -  `Body`  these is where the actual data are stored .
+-  `Options` Is the method used to check the availability of a resource .
+-   In XML formattion data is structures inside the labels called tags which have the opening and the closing .
+-  In URL encoded the data structure in a key and the value where key=value .
+-  In Form Data allows multiple of the data blocks to be sent where each block is seperated by boundry string . The boundry string is defined header of the request itself .
+-  In json data is formatted in pairs of name:value  multiple pairs are seprated by commas .
+-  Status line provide the http version status code and the brief explanation .
+-  `200-299`   This means everything is working as expected .
+-  `300-399`   Redirection error .
+-  `400-499` This means the error is with the request .
+-  `500-599` This means the error is within the server .
 - 
