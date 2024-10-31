@@ -61,3 +61,22 @@
    - preload is the optional setting allow the websites to be included in preload lists 
 - X-Content-Type-Options 
 - Referre-Policy 
+
+#  Windows Commannd Line 
+- Once you master the command line you will find it faster and more efficient .
+- The main usuage of the cli are the following 
+  - Lower resource usuage - As the cli uses the fewer system require than the graphics 
+  -  Automation - While you automate  GUI task , creating it with the commands make it easier to repeat the task .
+  - Remote Management CLI make it very convenint to use the ssh to manage a remoe system suuch as server,router or an IOT device . 
+  - cmd.exe is the default command line of the windows .
+  - systeminfo is the command that will give the whole information about the windows system .
+  - `tracert` stands for the trace route .
+  - `nslookup` is to looks for the host or domain and return its IP address .
+  - `netstat` is the command which is used to display the current network connection and display the listtening port .
+  - `ss` this is replacing the netstat in the linux system .
+  - `snake oil` is rhe cryptograpic methods or product considered bogus or fraudulent . 
+  - `Shodan` is the search engine for the device connected to the internet .
+  - `Censys` it focus on the interner-connected hosts,website and certificate .
+  -  `VirusTotal` provides a virus-scannig service for files using the multiple antivirus engine .
+  - `Have I been Pwned` tells you if an email address has appeared in the leaked data breach  .
+  - 
