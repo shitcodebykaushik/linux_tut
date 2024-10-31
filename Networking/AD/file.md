@@ -56,3 +56,18 @@
 - Sites in AD is a set of computers across one or more subnets connected using high speed  .
 - Domain is the structure of the network .
 - Ou is the Organizational unit is a container that systems administartion can use to store the simliar objects  for ease of administrative .
+
+
+# Windows actice directory 
+- Windows actice directory is the backbone of the corporate world . It simplifies the management of devices and users within the corporate environment. 
+- Windows domain is a group of users and computers under the administration of a given business . The main ideas behind the domain is to centralise the administration of common components of windows computer in the single repositiry callled Active Directory (AD).
+- The server that run the AD is knows as the domain controller (DC).
+- Centralisation and the Managing the security policy is the main idea of the domain controller .
+- The core of the windows domain is the active directory domain service (AD DS) . This service acts as a catalouge that holds the information of all of the objects that exits on your network .
+- We have the many object in the AD 
+  - Users are the one of the object that knows the security principal meaning they can be authenticated by the domain and can be assigned privileges over resources like file or printers . User are use to represent two type of the things one is the people [represent the person in the organisation] and other is services [ they have the priviliage to run the specific services ] .
+  - Machine are the object in the AD DS 
+  - 
+- So far we have organised user and computers in OUs just for the sake of it ,but the main ideas behind this is to be able to deploy different policies for each OU.
+- Windows manges such policies through the group policies objects .
+- 
