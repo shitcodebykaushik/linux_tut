@@ -80,3 +80,26 @@
   -  `VirusTotal` provides a virus-scannig service for files using the multiple antivirus engine .
   - `Have I been Pwned` tells you if an email address has appeared in the leaked data breach  .
   - 
+
+
+  # Packets and Frames 
+  - Packets and Frames are small piece of the data that, when forming together make a larger piece of information or  message .
+  - A frame is at the layer 2 . at the data link layer meaning there is no such information as IP address . This stage is also called encapsulation .
+  -  A packets is at the layer 3 .
+  -  A packets have different structure that are dependant upon the type of packets that is being sent . 
+  -  There are different headers in the packets 
+     - Time to live 
+     - Checksum fields provide the intergrity for checing for the protocols 
+     - Source Address  contains the IP address of the device  that the packets is being sent from so that data knows where to return 
+     - Destination Address it contains the IP address the packets is being sent to so  that the data knows where to travel next .
+     - Sequence  number the first piece of the data is given the random number .
+     - Acknowledgement number is the number next to the sequence number .
+     - Data is the byte of the file that is being transmitted is stored .
+     - Flag  this is the header that determines how the packet should handled by either device during the handshake process. Specific flag will determin specific behaviour .
+     - SYN is the initial packet sent by the  client during the handshake . This packet is uset to initiate a connection  and synchronise the two device together .
+     - SYN/ACK  This is the packet sent by the reciveing device to Acknowledgement to syncronise attempt to the client .
+     - ACK is used by either the client or server to acknowledge that a series of message/packets have been succesfully received .
+     - Fin is used to clenaly close the connection after it has been complete .
+     - RST this end all the communication .
+
+      
