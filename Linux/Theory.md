@@ -919,3 +919,8 @@ There are more protocol over the internet for sharing the FTP.
 - To exit vim we need to  shift Q! .
 - `pacman -Sup` This will print the location of all the package that are in the current full system update (-u) .
 - The command pacman-conf --repo core server is related to Arch Linux and its package management system, pacman. The pacman-conf command is used to query configuration information from the pacman.conf file, which is the main configuration file for pacman. 
+- `&` is the operator  that allows you to run the command in the backeground of your terminal .
+- `&&` this operator allow you to combine multiple commands together in one line of the terminal .
+- `>` This operatoe is a redirector meaning that we can take the output from command and direct it elsewhere .
+- `>>` This operator does the same function but nothing is overwritten .
+- 
