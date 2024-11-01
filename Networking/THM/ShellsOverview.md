@@ -102,4 +102,29 @@
      - Fin is used to clenaly close the connection after it has been complete .
      - RST this end all the communication .
 
-      
+- UDP 
+- It stands for the user data gram protocol.
+- It is the stateless protocol means it doesnt require the constant connection .
+- It is the protocl where lost of data is accepted .
+- Unstable connection result to the teriible expericen .
+- UDP have fewer connections .
+- Ports are the point in which data can be exchanged .
+- Port forwarding is the essential component in connceting the application and service to the internet . WIthout port formwarding , application and service such as servers are only availbale to device within the same direct network . It opens the specific port and it is done at the router of the network .
+- Firwall is a device within a network responsible for determing what traffic is allowed to enter and exit. Stateful and stateless are the two different type of the firewall .
+- VPN create the desicated path between each other over the internet .  Device connected within this tunnel form their own pvt network.
+- Router job is to connect network and pass data between them . Id does this by using routing (hence the name router) .
+- Routing simply checks the most optimal path in which these chunks of the data should be sent .
+- Router is the labels given to the process of the data travelling across network.  Routing involves creating a path between network so that this data can be successfully  delivered .
+- Switch is dedicated networking device responsible for providing means  of connection to multiple device , it can facilitate many form 3 to 63 using cabels .
+- Switch can operate at both layer 2 and layer 3 of the OSI model .they are exclusive in the sense  that layer 2 switches canot operate at layer 3 .
+- OSI stand for the open system interconnection model  is an fundamentals models used in the networking .
+- OSI consist of the 7-layers .
+  - Application is the top most layer of the osi where it is determined how the rules and the policy should be .
+  - Presentation this layers is the place where standarisation takes place this layer acts as translator for data to and from the application layer .
+  - session it helps to maintain the connection to the other computer .
+  - Transport this layer dealt with the transmitting of the data .  
+  - Network it is the place where the magic of the routing and re-assembly of data takes place. Some protocols at this layer determines exactly what is the optimal path that data should take to reach a device . OSPF (Open shortes path first) and the RIP (Routing information protocol) . At this  layer everything is dealt with via IP address .
+  - Data link it focuses on the physical addressing of the transmission. It receives the packets from t he network layer and add in the physical MAC address of the receiveing endpoints . Mac address can be spoofed .
+  - Physical refers to the physical components of the network 
+- Encapsulation is the term which means that some pieces of the information get added to the data .
+- 
