@@ -127,4 +127,34 @@
   - Data link it focuses on the physical addressing of the transmission. It receives the packets from t he network layer and add in the physical MAC address of the receiveing endpoints . Mac address can be spoofed .
   - Physical refers to the physical components of the network 
 - Encapsulation is the term which means that some pieces of the information get added to the data .
-- 
+- Object-oriented approch was used to develope the the powershell at the microsoft  .
+-  Powershell commands are knows as the `commands-lets` These are the more poweful then the traditional .
+- `Get-command` Will list all the available commands .
+- `Get-Content` Retrive (get) the content of a file and display it in the console .
+- `Set-location` Chnage(sets) the current working directory .
+-  Powershell provides the range of cmdltes for navigating the file system and managing the file .
+- Piping is a technique used in command-line environement that allows the output of one command to be used as the input for the another . This created the sequence of the opertion where data is flow from one command to the next operation . Represented by the | symbol .
+- In powefull piping is even mpre powerfull because it passes objects rather then just text .
+- `get-computerinfo` this will get the info of all the thing in the system .
+- `get-netipaddress` This will give the specific ip address assigned to the network .
+- `get-netipconfigurstion` this will give the detailed info about the network interface on the system .
+- `get-service` This will retrive the information of the service on the machine 
+- `get-nettcpconnection` This will display current tcp connection .
+-  Scripting is the process of writing and executing a series of command contained in a tet file,known as the script , to automate task that one would generally perform manually in a shell .
+- Blue team is the incident responder,malaware ab=nalyst and the threat hunters .
+- Red teams include penetration tester .
+- Encapsulation  refers to the  process of every layer adding heading to the unit of data and sending the encapsulated unit to the layer below .
+- Application data It all statrs when the user inputs the data they want  to send into the application.
+- Transport protocol-segement or datagram The transport layer such as tcp or udp add the proper header information and created the TCP segemtns(udp datagram) . this segment is sent to the layer . 
+- Network packet The network layer i.e the  internet layer adds an IP header to the received TCP segements or UDP datagram .
+- Data link frame  The ethernet or  Wifi receives the IP packets and adds the proper header and the trailer  creaating the frame .
+- The telenet protocol is a network protocol for remote terminal connection .
+-  Echo server  This server echos everythin you send it . 
+- Daytime server This server listen on port 13 .
+-  Web  This server listen on TCP port 80 .
+-  Dynamic Host Configuration Protocol (DHCP)
+-  Address Resolution Protocol (ARP)
+-  Network Address Translation (NAT)
+-  Internet Control Message Protocol (ICMP)
+   - Ping
+   - Traceroute
