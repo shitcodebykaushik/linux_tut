@@ -179,3 +179,8 @@
    -  OSPF is routing protocols  that allow router to share information about the network toplogy and calcukate the most efficient paths for the data transmission .
    -  EIGRP is cisco proprietry routing protocol that combines aspects of different routing algorithm . It allows routers to share information about the networks they can reach and the cost associated with those routes.
    - BGP (Border Gateway Protocol) is the primary  
+
+   # NAT 
+   - The main idea behind the NAT is to use one public IP address to provide the internet access to many private IP address .
+   - NAT supporting  routers maintain the  tabel translating network address between internal and external networkss .
+   - 
