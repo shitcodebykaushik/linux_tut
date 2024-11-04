@@ -161,3 +161,21 @@
 - Shodan 
   - An autonomous system number (ASN) is a gloabl identifier of a range of IP addresses .
   -    
+
+  # DHCP 
+   - Dynamic Host Configuration Protocol  is the application level protocol  that relies on the UDP: the server listen to the port 
+   and the client listen on UDP port  67 and the client client sends from the UDP port 68 . Laptop and mobile are configured to use DHCP by default .
+   - `DORA` follow these four steps to Discover offer requests and Acknowledgement
+   -  An IP packet is encapsulated within the  data link layer frame as it travel over layer 2 .
+   -  Two data link layer in which we work on is the Ethernet(IEEE 802.3) and the Wifi (IEEE 802.11) 
+   -  It alwyas need to know the the targets MAC address so the proper data link header can be created .
+   -  Mac addresses are the 48 bit number .
+   -  When the device is on the same network then they need to know the target MAC  address only when they are communicating .
+   -  ARP make it possible to find the MAC address of the another device on the ETHERNET .  ARP is considered at the layer 2  as it dealts with the MAC address .
+   -  ICMP is mostly used for the error dignostic and error reporting .
+   -  `ping and the tracerroute` are the two common commands used for the icmp .
+   - The internet protocol has a fields called time to live (TTL) that indicates the maxium number of router a packets can travel through before it is dropped .
+   -  THe router decreaments the packets by thr TTL by one before it sends it across  .
+   -  OSPF is routing protocols  that allow router to share information about the network toplogy and calcukate the most efficient paths for the data transmission .
+   -  EIGRP is cisco proprietry routing protocol that combines aspects of different routing algorithm . It allows routers to share information about the networks they can reach and the cost associated with those routes.
+   - BGP (Border Gateway Protocol) is the primary  
