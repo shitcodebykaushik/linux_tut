@@ -183,4 +183,17 @@
    # NAT 
    - The main idea behind the NAT is to use one public IP address to provide the internet access to many private IP address .
    - NAT supporting  routers maintain the  tabel translating network address between internal and external networkss .
-   - 
+   # Networking Core Protocols
+   # Cryptograpic Basic 
+   - It ultimate purpose is to secure the communication in the presence of the adversaries .
+   - The term secure include the confidentiality and the integrity of the communicated information .
+   - For the payment we use the PCI DSS 
+   - PCI DSS  ensure minium level of security to store the data ,process and transmit the data related to the credit card .
+   - Encryption function return the cypher text .
+   - Cipher is a algorithm to convert a plaintext into a ciphertext and vice versa .
+   - There are two types of the encryptions symmetric and asymmetric .
+     - symmetric use the same key for the encryption and decryption 
+     - Example of the symmnetric encryption are 
+       - DES (Data Encryption Standard )
+       - 3DES (Triple DES) 
+    - Asymmetric uses the different pair of the key for the  both 
