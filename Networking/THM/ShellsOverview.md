@@ -196,4 +196,13 @@
      - Example of the symmnetric encryption are 
        - DES (Data Encryption Standard )
        - 3DES (Triple DES) 
-    - Asymmetric uses the different pair of the key for the  both 
+    - Asymmetric uses the different pair of the key for the  both .
+# NMAP 
+- It solves the problem to find the  running services on the a specific host . 
+- NMAP uses the sophisticated way to find the things omline .
+- NMAP offers the -sn option to discove the thing online ,without attempting to discover the running service on the them .
+- When scannig a directly connected network ,NMAP starts by sending ARP requests . When device responds to the ARP request ,NMAP labels it with the `HOST is up`
+   `nmap -sn ip address/subnet`
+- By netowrk service we means any process that is listening for incoming connections on a TCP or UDP port .
+- TCP port is open would be to attempt to telenet to the port . 
+- SYN scan is the considered as the relatively stealthy  scan . We can select using the -sS flag .
