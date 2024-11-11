@@ -657,3 +657,16 @@ In the context of web infrastructure .
 - To list the current partion is using fdisk we would use -l switch .
 -  We use the -B switch to make the backup of the file .
 - nc -l -p 12345 is use to start the netcat in listen mode using the port 12345 .
+
+# Hash Function 
+- Hash function are different from the encryption . There is no key  ans its meant impossible to go from th output back to the input .
+- A hash function  takes some input data of any size and created a summary or digest of that data .
+-  The output is the fixed size . It hard to predict the  output of any input and vice versa .  Any single change in the input data results in great change in the output .
+- `MD5` Message-Digest Algorithm 5 
+- `SHA1`  Secure Hash Algorithm 1 .
+-  The ouput of the hash  function is the typically raw bytes which are then encoded .
+- For the good security practice server store the hash value of the password .
+- Hash collisions is something which gives the same output from the two different hash input .
+- The pigeonhole effect states that the number of the items in more  than the  number of containers . In other words there are the fixed number of the different outputs values for the hash function but you can give it any  size input . 
+- The output size of the hash function of the MD5 is the 16 bit .
+- 
