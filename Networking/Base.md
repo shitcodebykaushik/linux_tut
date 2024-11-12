@@ -669,4 +669,5 @@ In the context of web infrastructure .
 - Hash collisions is something which gives the same output from the two different hash input .
 - The pigeonhole effect states that the number of the items in more  than the  number of containers . In other words there are the fixed number of the different outputs values for the hash function but you can give it any  size input . 
 - The output size of the hash function of the MD5 is the 16 bit .
-- 
+- Websites like CrackStation and Hashes.com internally use massive rainbow tables to provide fast password cracking for hashes without salts.
+- Js is the interpreted language .
