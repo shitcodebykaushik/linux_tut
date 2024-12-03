@@ -1,4 +1,5 @@
-#!/bin/bash 
+#!/bin/bash
+# This is the file for the simple system monitor  
 printf "The   Systen information is  in this sequence:%s\n"
 printf "Hostname: %s\n" "$(hostname)"
 printf "OS : %s \n " "$(uname -s)" 
