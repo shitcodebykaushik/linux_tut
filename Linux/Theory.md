@@ -908,7 +908,7 @@ There are more protocol over the internet for sharing the FTP.
 - system log are stored into the `/var/log/syslog`
 - authentication logs are stored into the `/var/log/auth.log`
 - `pacman -Fy` was done which was the large file . It is use to update the local database with the updated file .
--
+-`sudo dpkg --configure -a` This is used for the debian package manager which handles the .deb package installation configuration and removal and the flag -a here means that it tells the dpkg to attempt  to congfigure all packages that are in the unconfigured state .
 - access log keep a record of users and process activity on the system,including login attempts,file access and the network connection .
 - `Audit logs` Keeps records information about security-relevant events on the system .
 -  `lsblk`

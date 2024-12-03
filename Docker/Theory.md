@@ -19,9 +19,9 @@
  - `docker version` It will verifiy that wheather cli can talk to engine or not . 
  - `docker info`  It will give most config value
  - `docker`
-
 - `image` An image is the application that we want to run . It it all the binary and   libiray source code that make the application . It is an object that contain os filesystem and the applicaton,It is the stopped container ,in terms of developer we can say that it is the class .`
-- `container` A container is the an instance that image running as a process. Or we can say that it is a software bucket comprising everything that is necessary  to run the software independently .
+- `container` A container is the an instance that image running as a process. Or we can say that it is a software bucket comprising everything that is necessary  to run the software independently .Container have theire own file system process and network . Container are herieted from the image . 
+- A `instance` in a docker is the term used to describe the container that is actively running or has been created from a docker image . It is where where application or service lives and operated in a isolated environment 
 -`docker exec -it container id bash` This command will open the terminal in the container
 - `docker container run --publish 80:80 nginx.`
  This will download image 'nginx' from docker hub and will start a new container from that image after that it will opened the port `80` on the host IP . Routed that trafiic to the container IP, port 80 .
@@ -244,13 +244,17 @@ called “containerizing”. Sometimes we call it “Dockerizing” .
    - Now the docker will build your image into the docker image .
 - Once your container is containerized it is ready to ship and build  .
 - `Dockerfile` is the file that describe the application and tells the docker how to build an image from it .
-
+- Container utilize feaatures provided by the host OS such as the :- 
+   - Namespace which provides the isolation for resources such as process IDs(PID) and the IDs(UID) file system ans network .
+   - Control Groups (cgroups) Manage and limit resouce us
 - Always  push the production image containing the stuff needed to run your application .
 -  The docker pull subcommand is programmed to look for the images at this location .
 - Docker registery is a place where the Docker images can be stored in order to be found publicly found .
 - Ochestration It is all about the automating and simplifying the managemt of the containerized application at scale . Thingd like automatically rescheduklling containers when nodes break,scaling things up  when the demands increase and smoothly pushing updates and fixes into the live production environment .
 - Cluster of orchestrated docker host a swarm and the docker hosts participating in a swarm are said to be the swarm mode .
 - Node are the instance of the docker engine .
+- A node is the machine (physical or virtual machine) that is part of the docker swarm cluster .
+- Cluster is the group of the nodes working together in a swarm .
 - A swarm consist of one or more nodes .These can be physical, cloud or vm .
  - All nodes should communicate with each other over the reliable network .
  - Nodes are configured as worker or managers .
