@@ -672,3 +672,4 @@ In the context of web infrastructure .
 - Websites like CrackStation and Hashes.com internally use massive rainbow tables to provide fast password cracking for hashes without salts.
 - Js is the interpreted language .
 - When pen-testing a web application, it is important to check whether the website uses internal or external JS. This can be easily verified by viewing the page's source code .
+- DNS is website query for the name of the website .
