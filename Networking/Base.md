@@ -337,8 +337,23 @@ Domain Name System   is the protocol responsible for resolving hostnames, such a
 - A Recursive DNS Server is usually provided by your ISP, but you can also choose your own. This server also has a local cache of recently looked up domain names. If a result is found locally, this is sent back to your computer, and your request ends here (this is common for popular and heavily requested services such as Google, Facebook, Twitter). If the request cannot be found locally, a journey begins to find the correct answer, starting with the internet's root DNS servers.
 
 - The TLD server holds records for where to find the authoritative server to answer the DNS request. The authoritative server is often also known as the nameserver for the domain. 
-
+- A DNS  query is a request made by a computer or device to resolve a domain name into its corresponding IP  address. This process allows your device to connect to website or other online sevices by translating  human-readable 
 - An authoritative DNS server is the server that is responsible for storing the DNS records for a particular domain name and where any updates to your domain name DNS records would be made. Depending on the record type, the DNS record is then sent back to the Recursive DNS Server, where a local copy will be cached for future requests and then relayed back to the original client that made the request. DNS records all come with a TTL (Time To Live) value. This value is a number represented in seconds that the response should be saved for locally until you have to look it up again. Caching saves on having to make a DNS request every time you communicate with a server.
+-`nslookup` For querying DNS server 
+- `dig` Advanced querying and deubugging .
+- `ping` To check if a domain resolves and is reachable  .
+-  How DNS works?
+   -  When we type url in our browser then our computer needs to finds the corresponding IP address to establish a connection .
+   - First our device checks it local cache to see if it knows the ip address . If address found then device uses the cached address,skipping the rest of the process 
+   - If not found then device sends the  DNS Query to a DNS resolver(usually managed by your ISP or public DNS service like Google) .
+   - Root Sercever then tld server then resolver finds and return ip address .
+  - Your Device connects the web server using the IP .
+  - Caching speeds up the DNS by temporarily storing responses at different levels .
+   - Browser cache stores results from previous queries. 
+   - Operating system cache Store DNS records locally on your device.
+   - Resolver cache DNS resolver store results to reduce server querirss
+   - TLD handle domain withn a specific top level domain (like .com,or .org)
+   - Authritative DNS server contains the final mapping of domain name to IP address .
 # CyptoGraphy 
 Without encrypton communicaton over the internet will be very insecure and it would be very easy for someone to see your data.
 
