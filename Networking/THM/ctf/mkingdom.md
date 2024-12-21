@@ -1,0 +1,11 @@
+- nmao 10.10.42.52
+- nmap -Pn -p 1-1000 10.10.42.52  // Here we got the one port open at the port 85
+- nmap -Pn -sC -sV -p 85 10.10.42.52 // Here we got the apache web server running 
+
+- 10.10.45:85 i got the first space   // At the image there was nothing at the image source 
+- Time to do the diretory scan 
+- ffuf is a tool which we use for the directory scan 
+ - fuf -w /usr/share/wordlists/dirb/common.txt -u http://10.10.42.52:85/FUZZ
+ - At the source code we got the Concrete5 (now known as Concrete CMS) is an open-source content management system (CMS) designed to create and manage websites easily. The version 8.5.2 refers to a specific release of the software.
+- http://10.10.42.52:85/app/castle/index.php/login here we got the login page .
+- http://10.10.42.52:85/app/castle/index.php/dashboard/files/search till here i a, here .
