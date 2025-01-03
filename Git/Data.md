@@ -1,4 +1,5 @@
 # GIT 
+To exit from the git terminal that git log command just type `q` .
 It is version control system .
 It is  also known as the versioning system.
 It is the terminal system tool
@@ -70,6 +71,13 @@ The head is always towards the master .
  # Git pull
   Always try to take time while doing this as it is sensitve things
   
+# Git log 
+- This will show the lof of the repo 
+- `git log -- Express/` This will show the log of the particular dir of the repository.
+- To get the exact commint from the time period we have options to git log --since="2023-04-02" -- until="2023-04-02" -- Express / this will give the log of particular date only .
+# Git stat 
+- git log --stat this will show the quicl review of the changes without needing to see the actual contents and contents changes .
+- Alternative we have `git log -p` this will show the actual contents changes .
 
 # Github CI-CD
 
@@ -93,3 +101,4 @@ node_modules/
 /build/``` 
 ```
 It keeps the repository clean and helps you to make sure to avoid security risks .
+
