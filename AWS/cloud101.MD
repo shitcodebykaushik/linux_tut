@@ -37,6 +37,29 @@
   - Reliability is the ability of a system to recover from the infrastrucutre or service disruption .
   - Performance Efficinecy is  the ability to use computing resource . 
   - TCO is the fincial metric .
+  # Insatnace 
+  - An instance is a fundamental concept in cloud computing,particular in AWS and other cloud .
+  - At its core an instance is a virtual server that you can use to run applications and workload in  cloud . 
+  - It providing computing resource such resource such as CPU,memory,storage and netwokring. 
+  - Instance are typically associated with the Amazon EC2 (Amazon Elastic Compute Cloud2) .
+  - We can choose the type and size of an instance based on your workload needs ./
+  - An instance is a virtualized representation of a physical server .
+  - Instance can run various operating system upto your wish .
+  - To lauch EC2 instance on AWS we can choose AMI(Amazon machine image) which determines the operating system and the software on the instance .
+  - `Elastic` Refers to the ability to dynamically scale computing resources up or down based on demand. Elasticity is cornerstone of cloud computing and allows system to handle varying workloads efficiently without requiring over-provisioning or mannual adjustments .
+  - `When some one say i am giving you the one instance from my server` It simply means that they are sharing a piece of their server computing capacity with you . often isolating it so feels like your own dedicated computer .
+  - `Spin up` is a casual way of saying they are launching or creating a new virtual server. By allocating the resource and allowing you to use it .One you have been given the access it like a having remote computer where we can host website run applications store and process data .
+  - IP addrees and key file are the important thing for you to connect it from your end and start using it .
+  - `Amazon Machine Image` is a pre-configured template used to launch an instance .
+  - `Instance type` means the size and capabilities of the instance(eg t2micr)
+  - `Instance` means virtual server running in the cloud .
+  - `Server` refers to the physical machine or virtual instance used to run applications .
+  - `VPC` refers to the virtual private isolated network for your cloud resources. 
+  - Vertical scaling means increasing the size .(means upgrading the things)
+  - Horizontal scaling means adding more instance (means add resourcr)
+  - In Elasticity it adjust resouce to handle chages in demand .
+  - Auto scaling means launces and terminates instances based on demand .
+  - Load Balancer: Distributes incoming traffic across multiple instances.
   # AWS S3
    - It means amazon simple storage service .
    - Buckets are contianer for the data store in the S3 .
