@@ -12,7 +12,7 @@ In linux everything is file
 - ls -lth
 It is use to sort the file in readable format
 - Clear
- It is use to cleat the terminal or you can use `ctrl+l`.
+ It is use to clear the terminal or you can use `ctrl+l`.
 - touch newfile_txt
  This touch command   will create the new file. 
 - echo "Line to be written">file name with the format
@@ -923,4 +923,8 @@ There are more protocol over the internet for sharing the FTP.
 - `&&` this operator allow you to combine multiple commands together in one line of the terminal .
 - `>` This operatoe is a redirector meaning that we can take the output from command and direct it elsewhere .
 - `>>` This operator does the same function but nothing is overwritten .
-- 
+- There one of the important things which we ignore it .
+  - root directory this is the top level directory that we already know about it . Owned by the system administrator.
+- `Home directory` Its symbol is [~] this is the sub-directory for the personal files and setting under the root directory owned by the individual user .
+- `rmdir` is remove the directory 
+- Use `&&` to run the second command only if the first command succed . 
