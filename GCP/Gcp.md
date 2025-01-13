@@ -19,10 +19,7 @@
  - With the SQL query you can easily analyzing large data sets .
  - Ingested means the process of importing,collection or bringing data from theh various source into a system for processing,storage,analysis .
  - 
-
-
-
-
+- These are the queries used to solve the module one .
  ```sql
  #standardSQL
 SELECT
@@ -88,11 +85,12 @@ SELECT STRUCT("Rudisha" as name, [23.4, 26.3, 26.4, 26.1] as splits) AS runner
  ```
 
 
- # Creating API 
+ # Creating API
+- In this module we first created the API then we tried to connect the API to  instance from the google computes engine .
  Go into the APIS & Services Then move into the Credentials /
  Click on the create credentials 
  then click on the APi key 
- Copine the api key AIzaSyCFzM6bgNGfemksze_8kTF9dp1VVPpKXnY
+ The api key `` -> this is the dummy api that we have .
  {
   "config": {
       "encoding":"FLAC",
@@ -102,3 +100,32 @@ SELECT STRUCT("Rudisha" as name, [23.4, 26.3, 26.4, 26.1] as splits) AS runner
       "uri":"gs://cloud-samples-tests/speech/brooklyn.flac"
   }
 }
+# Moudle Autoscaling 
+- Autoscalling is fetures in cloud computing that automatically adjusts the number of compute resource such as virtul machine , or container instance based on the current demands. In gcp autoscalling helps to ensure that application have the right amount of resource at any given time, optimizing the cost efficiency without declining the performance . For maintaing the application availability and reliability by scalling up resource  during the peak time .
+# `Bucket`
+- Bucket refers to a storage container within Google cloud storage.
+- Buckets are used to hold data objects,which can be any kind of file such as images,videos documents or backups.
+- Buckets name should be always unique across GCP .
+- Bucket come with the permission and access control policies allowing the fine line grained .
+- Remember the object are the fundamental unit of the data that is stored in a buckets .
+- Buckets are immutable means that once the object are uploaded then object cant be modified but it can be overwrite an object by uploading new version with the same name .
+- Buckets are flat means there are no dictories, instead it have folder structue like `folders/file.txt`. As it does not follow the hierarchical structure .
+- Buckets are encrpyted by default, and versioning on the bucket is enabled then  object can be  stored whenever you onverwrite an object .
+- Google cloud storage buckets are stored as binary blobs along with the meta data making the system higle available  with the flexible and optimized for performance .
+# `Creating Instance Template`
+- It simply means defining the resuable configuration for virtual machine instance,instead of manually specifying all the settings every time you create VM, with the template we can create multiple VMs with the identical configuration .
+- When we create instance template we can specify several key settings .
+  - Machine type 
+  - Boot Disk 
+  - Network ans subnetwork 
+  - Metadata 
+  - Firewall tags 
+  - Service account and scopes 
+  - Startup scripts 
+  - Lables : Key-value pair for resource organisations .
+# Metric 
+- These are the quantifible measurement that represents a specific aspect of the system ,application or behavior over time .
+# Compute Engine 
+- It is a service provided by the gcp for the customizable virtual machine for running application , offers flexibility in choosing the flexibility in choosing the cpu and all .Use it for web hosting, data processing, machine learning, or migrating on-premises workloads.
+- Scripts are the peace of the code or instruction used to automate tasks .
+- 
