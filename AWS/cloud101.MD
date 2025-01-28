@@ -83,3 +83,45 @@
    - It is a serverless computing service that is used to process snippets of code when a lambad function os triggered .
   # AWS cloud watch 
    - It is use to monitor the stuff .
+# Understanding the concept of the vps 
+- When we say that we are buying an instance in the cloud computing espically with the AWS then it typically refers to provisioning and paying for the virtual machine on AWS . Commonly knows as the Elastic compute cloud .
+- On demand Instance means we are renting an instancr on a `pay-as-you-go` basis .
+- We pay for the compute capacity per second or per hour .
+- There are concept of the reserved instance also /
+- For flexible workloads we use the spot instance  and it cost much lower then the other one .
+# Hostinger 
+- Hostinger provdes main web solution including shared hosting ,vps hosting and wordpress hosting including the cloud hosting but the thing like IASS and Pass .
+- Shared hosting 
+- Vps hosting (virtual private server,more power & control).
+- `Cloud hosting` scalable and faster performance .
+- Minecraft server (For gaming servers)
+- `200 GB` of storage space on the server to store the website files database,emails and media . Most of the hosting provider uses teh NVMs SSD or SSD which is faster than the traditional HDD storage .
+- Unlimited Bandwidth means there is no strict limits in the how much data(in Gb or TB) can be transerred between your websites and the visitores . In reality there are usually fair usage policies(FUP) to prevent the extensive .
+- Egress bandwidth refers to the the rate at which data is retrived from your buckets in the course of the completing request made to cloud storage .
+- Network egress refers to the rate at which data is sent over the network from your buckets to requesters .
+- `300 database` means you can create upto 300 MySql or PostgreSQL database .
+- Unlimited FTP (File transfer Protocol) accounts for secure file transfer .
+- A cdn is a network of server distributed worldwide that caches(store) copies of your website content to speed up loading times and reduce bandwidth usage . When a visitor request page the neares CDN server delivers cached files (image CSS, js) instead of sending the request to the main hosting server . The reduce the distance between server and user ,making the website load faster . Without cdn data traveks the thousand of miles which increase the latency (slow loading) , with the cdn its caches the content from the nearest one and load the data faster  which increase the latency .
+- How CDN & Bandwidth Work Together
+Scenario Without a CDN
+
+Your main server directly serves all visitors. If your website has 100,000 visitors a month, and each page load is 5MB, your bandwidth usage will be:
+100,000 visitors × 5MB = 500GB per month If your hosting plan includes 200GB of bandwidth, you will exceed the limit and may need to pay extra.
+Scenario With a CDN
+With a CDN:
+80% of requests are served from CDN cache.
+Your main hosting server only handles 20% of traffic.Bandwidth consumption is significantly reduced.(100000 visitors × 5MB) × 20% = 100GB per month
+You save 400GB of bandwidth!
+Conclusion: Do You Need a CDN?
+If your website has global visitors → YES
+If you want to improve speed & performance → YES
+If you need to reduce bandwidth costs → YES
+If you run an e-commerce or business site → YES
+
+If your website is small & local (few visitors, no international traffic) → NO (but still recommended for security).
+🔥 Final Thoughts
+
+    Bandwidth = The amount of data transferred from your hosting to visitors.
+    CDN = A global caching system that reduces bandwidth and speeds up your website.
+    Using a CDN saves bandwidth, improves performance, and protects against attacks.
+- 
