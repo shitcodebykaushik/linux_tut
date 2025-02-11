@@ -281,9 +281,30 @@ called “containerizing”. Sometimes we call it “Dockerizing” .
 - After making the changes you can see the changes in the container in the terminal by `docker diff TS ` it will list the changes made in the container .
 - eth 0 is the interface for which the Docker engine assigned the IP address and this address falls within the same range of the dockwer0 virtual interface this inteface is used for intra-container communication and host-to-contianer communication .
 - The second one is the lo (Loopback) interface for which the Docker engine asssigned the address .This is used for the local communication within the container .
+- Avoid running container as root to reduce security risk .
+- Use --restart=always to automatically restart failed containers .
+- Use Dockerfile Best practices to optimize the layers by ordering copy and run statement .
+- Leverage Multi-stage builds to reduce image size and improve the security by sepearty build and runtime dependencies .
+# Swarm 
+- Docker swarm is like a well-organized kitchen that makes sure multiple server(node) work together .
+- A nodes is virtual or physical machine .
 
 
 
-
-
-
+# Persistant volume 
+- Persistant means when the system us shutdown or restaterd then also data reamins , as it not delted .
+- Volumes are the way to store the data into the contianer 
+- Docker and k8 uses the persistant volume .
+  - As we know that docker container are ephemeral by nature which means that any data created inside the container is lost once that container is removed .
+  - Volumes are the solution they are designed to persist data outside the container lifecycle,enabling us to store and manage data that must survive when a container is removed or the image is rebuilt .
+    - Volumes are easy to handle through the api call or docker cli .
+    - Volumes are easier to backup and works on the both the linux and the windows .
+    -  Volumes helps the application for high performance I/O.
+    - Volumes are not good choice if you need to access the files from the host as the volumes are managed by the  docker .
+    -  Volumes are often better choice than writing data directly to a container because a volumer doesnt increase the size of the container .
+    - If your container generate non-persistent state data,consider using a tmpfs mount to avoid storing the data anywhere permanently  and to increase the container performance by avoiding . 
+  - Docker provides two primary ways to use persistent volumes .
+    - Named volumes are created and managed by docker . Data is stored in a part of the host file system which is managed by docker .
+    (/VAR/LIB/docker/volumes on linux) this is the most common way of the handling the persistant data  and the way to do into the most production scenarios .
+    - Bound MOunts ties volumes to a specific folder or file on the host machine , it provides the most flexibility but can caue the discrepancies between host and container .
+    - 
