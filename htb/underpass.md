@@ -1,0 +1,62 @@
+- Packets are  the building blocks of the networking . It allow the seamless connection over the network .
+- Defensive security are the for the blue teams .
+- Offensive security means breaking in to the keys by abusing the security system of the application . Exploiting bugs and abusing insecure bugs .
+- At defencsive we aims to protect the system from unwanted attack .
+- Process of data aims to arrange them into a format suitable for analysis .
+- Firwwals controls what traffic can go inside the system .
+- IPS block traffic which matches the present rule and attack signature .
+- An incident referst to the data breach .
+- Ransomeware encrypt  the user file .
+- The output of the hash function is the 16 bit .
+- WebAPI and the Api is the abstraction for the complex work .
+- WebAPI can be access through internet with the https .
+- API is used for the system level interface level interaction. TCP/IP etc .
+- SWAP means is virtual RAM which prevent crashes from out of the memory .(OOM) erros .
+-  FTP,SMB,TELNET, RSync and RDP annonymously .
+- PWNBOX is the customized online parrot security  linux system .
+- `UDP Enumeration` It is the process of systematically  probing  a target system system to discover  open UDP identfying the runnig service and gather usefull information for the further  exploitation . Unlike TCP ,UDP is the connectionless making it more difficult to scan due to less acknoledgement response .
+- Attacker uses the UDP for the refelection and amplification DDOS attack .
+- There are few challanges in the UDP
+   - There is no three handshake which led to difficulty in determining the open and closed port
+   - ICMP rate limiting as some system limits the  ICMP .
+- At nmap '-sU' flags enable  the udp scanning 
+  - UDP 161 => SNMP enumeration 
+  - UDP 53  => DNS enumeration 
+  - TFTP (UDP 69) => tftp can be unauthenticated and can be used for downloading configuration file .
+- Windows uses the NETBIOS (UDP 137,138,139 )   
+# `SNMP` 
+- Simple Network Management protocol is UDP based protocol used for managing and monitoring network device. It operated on UDP port (queries) and 162 (traps) .
+- SNMP enumeration is the process of querying  SNMP-enabled device router,switch,printers,servers ) to extract sensitie information .
+#`Cracknamtion`
+- It is the precomputed lookup table to crakc password hashes these tables store mapping between hash of a password and the correct password for that hash . It was created from the wikipedia .
+- Mosh is the mobile sheel client which is a tool for remote terminal accrss offering features to like better responsivenes .
+# Open VPN 
+- Go in the same dir where you have downloaded the openvpn file and  run it with the  `sudo openvpn filename` .
+- To check if the VPN is running of not `ps aux | grep openvpn`
+- Once the open vpn is connected then ping to the machine and wait for the response .
+- Always add the ip to the hosts file with the name of the machine  location of the hosts file is `/etc/hosts` .
+- `127.0.0.1` This is the local host which is the loopback address meansing it refers to the your own computer when we ping in the localhost means we ping our own system . `ping -c 4 localhost`
+- `::1` local host` this is the ipv6 equivalent of IPV4 `ping 6 -c 4 localhost` 
+- `127.0.0.1` this is the workaround for system without a static IP .
+- Static  IP address is fixed that is mannualy assigned IP address that does not change over time unlike dynamic assigned by the DHCP .`ip a` will show the static ip of the system .
+- HTB uses the `tun0` to chek the tun0 run this command `ip a | grep tun0` if in the output we see that scope is the global tun0 then it means we are connected to the htb vpn .tun0 is the virtual network interface created by the VPN service like openvpn and act as a tunnel interface that encrypt the data router traffic securely through vpn .
+- `hostnamectl` will give the details of the system .
+- To check the external IP run this `CURL ifconfig.me` Output will be IPV6 .
+- `curl -4 ifconfig.me` output will be IPV$ .
+-  Check route run this command `ip route` output will be IP via path .
+- namp -Pn -T5 underpass.htb` This will search if the hosts is up not . 
+- PORT 161 is the dedicated to the simple network management protocol which is use to manage and monitor network device  remotely .
+- SNMPWALK is used to query the snmp device for information using the snmwalk . `snmpwalk -V2C -c public underpass.htb` .
+- If we found device during the enumeration that 161 is open if it open then it will enumerate the device .
+- SYSORID is the part of the SNMP (Simple network management) and it stand for the  the capabilities of a SNMP-enabled device .
+- `Common Vulnerbility Exposures ` CVE is the inteligence system , vulnerability is the the weakness in the computation  logic found in software and hardware components that when exploited result in the negative impact of vulnerbality intergrity .
+# DirSearch 
+- It is the command-line tool designed for brute force directories and file in the webserve .
+- DirSearch is the thing which give you the oppurnity to perform complex web-content discovering with the many vectors fir the wordlists .
+- HTTP only means javascript cant access it .
+- WAP means web application firwall.
+- UFU means uncomplicated firewall)  is issue of the ubuntu .
+- 403 means forbidden .
+- SOC means security operation center .
+# SSH 
+- SSH stand for the secure shell which the software pacakge  that enables secure system administration  and file transfer over insecure network . The ssh uses the encryption to secure the connection between a client and a server . All use authenticate, commands output and file transfer  are encrypted to protect agains attack in the network . In this when clinet rewuest then server sends the private key .
