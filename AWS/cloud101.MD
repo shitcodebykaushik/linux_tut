@@ -124,4 +124,16 @@ If your website is small & local (few visitors, no international traffic) → NO
     Bandwidth = The amount of data transferred from your hosting to visitors.
     CDN = A global caching system that reduces bandwidth and speeds up your website.
     Using a CDN saves bandwidth, improves performance, and protects against attacks.
+- In instance we just lease the compute power of the hardware .
+- If we buy the instance then it will provide me the dedicated server .
+- Every vps run as independent virtual provate server which has resource lif you buy a VPS plan, you will get a dedicated portion of a serverke.
+  - CPU 
+  - RAM
+  - Storage
+  - Os 
+- VPS hosting is dedicated per user. Its like apartment in the building .
+- In vps we have full root access and the more isolated environment .
+- VPS works through the hypervisiors tech which is software tool that works to manage the virtual machine on the physical server .
+- We can coonect the vps using the SSH key from anywhere and work on it like real physical computer .
+- Poor vps configuration can lead to the security issue .
 - 
