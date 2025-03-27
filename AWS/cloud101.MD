@@ -136,4 +136,45 @@ If your website is small & local (few visitors, no international traffic) → NO
 - VPS works through the hypervisiors tech which is software tool that works to manage the virtual machine on the physical server .
 - We can coonect the vps using the SSH key from anywhere and work on it like real physical computer .
 - Poor vps configuration can lead to the security issue .
-- 
+# Cloud service model 
+- These are charatersized by term service .  And can be accessed by many device like mobile and laptops  and all .
+ - Software as a service 
+   - According to the nist it means that the capabilities provided to the consumer is to use the provides appliication running on a cloud infrastructure.
+   The application are accessble from various client devices through  a thin client interface . Such as Web Browser or program interface .
+ -  Infrastructure as service 
+   - The capabilities provided to the customer is to provision processing storge networks and other fundamental computing resource where the consumer is able to deploy and run arbitrart software .
+   - Pass offer the compute and the operating system as service and allow cutomer to install their application on the cloud platform .
+   - Compute Os STORAGE UNDERLYING HARDWARE NETWORKING THESE ARE CORE .
+ - Comunication as a Service 
+   - Communication as a service include hosted voice videos conferenceing and instant messaging e-mail collaboration and all othe communication .
+ - Desktop as service 
+   - It support virtual service that is hosted on the cloud and accessed by the desktop computers .
+- On permise 
+  - It means managing and creating the own cloud service 
+- Of permises 
+  - This means hosting a service that is located remotely from a company data center and is usually in a cloud service data center .
+- Ubiquitous access refers to the ability to access cloud resource from anywhere in the network from variety of device such as laptos,smartphones and thin or thick client .
+- Compute pool 
+- Memeory pool 
+ - There is total and finite ammount of ram installed in the bare metel or the physical server . So the ram is then virtualized by the heypervisor software into memory pools and allocated to virtual machine s .
+- VPN access and internall working 
+  - A VPN allows us for secure and usually encrypted connections over a public network . It creates the tunnel between users device and the remote server .
+  - COrporat vpn rely on the coordinated function of the vpn server to gateway,client softwared and the underlying network infrasturce. 
+  - The vpn gateway sits at the network edge. It function as bridge between the internal corporate network and the external devices ,implementing security measure for data traffic . Client software installed on employee device initiates the vpn conncetion and handles the ongoing communication with the vpn .
+  - Network infrastructure includes routers switces and firwallss that maintain network interigity and facitiliate data flow .
+  - Administrator define the network policy before connecting to the internet , these rules govern the flow of the traffic and dicate user permission, the involve establissing the remote connetion with the secure communication protocol ,selecting strong encryption standard and configuring network routes tht the encrypted vpn traffic will follow .
+  - Once the client handshake is complete,the focus shifts to establissing the vpn tunnel,the tunnling protocol is the core that supports secure data pasage, both the client and the server agree on a tunnling protocol that suits their secuirty requirement  and network capabilities.
+  - After the tunnel connection is done then focus shifts to the secure channel creation begin with the key exchange . This provide a way to securely generate and share a key between the two parties without the need to transmit the key itself over the internete . Advance DH groups is used to apply more security 
+  - Once the secure channel is done IP address allocation is central to integrating the client into the network . Each vpn client is assigned an IP address from a designated pool,which is crucial for directing the packets to their proper destination . IP address enables the client device to effectively join the corporat network .
+  - VPN tech offers two method of routing client traffic split and full tunnling .
+  - Connection stability and controll mesaage .
+    - The vpn conncection is kept alive and stable using the heartbeats and kept alive message .
+    - heartbeats are the regular signal sent by one device to another to confirm the connection is active or not .
+    - Keepalive are also similiar but it sents the connection prifegined interval .
+    - Check sum is a value derived from the sum of bytes in a data packets, which is used to detect errors afeter the transmission .
+- conncetion termination is important ;
+  - Because secure closure of the connection is most important things.
+   - The teardown process .
+   - session cleanup is important for the post - termination step .
+   - The connection termination process safegurad againsts unauthorized access and potential data leaks .
+# How DNS WORKS
