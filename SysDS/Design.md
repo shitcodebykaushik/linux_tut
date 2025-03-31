@@ -1,11 +1,10 @@
 # What is system design 
 - It is the process of designing the elements of a system such as the architure,modules,and components,the different interfaces of those components and the data that goes through the system .
-
 - LLD It stand for the low level design . Describe the design of each element mentioned in the high level design of the system
 - HLD It stand for the high level design .It describe the main components that would be developed for the resulting product . The system architutre details ,databse design and service and the process the relationship betwenn various modules .
 # Monolothic Architure 
 - Architure means the internal deign details for building the  application .
-- When the frontend backend and data storage are written together and deployed together are known as the monolothic . All the functionlaities must be in single codebase ,It is easier to understand as the things are the centralized system ,integration testing is easy and less confusion is less . There is less network call which reduce the latency . IF there is single bug in any module then the entire moducle can be destroyed . There is need to update the whole module to change the basic things and nedd to deploye again . And for the chamge in the single programming lamguage you meed to update the whole . Scalability and single code failure is main issue here .
+- When the frontend,backend and data storage are written together and deployed together are known as the monolothic . All the functionlaities must be in single codebase ,It is easier to understand as the things are the centralized system ,integration testing is easy and less confusion is less . There is less network call which reduce the latency . IF there is single bug in any module then the entire moducle can be destroyed . There is need to update the whole module to change the basic things and nedd to deploye again . And for the chamge in the single programming lamguage you meed to update the whole . Scalability and single code failure is main issue here .
 - Website are the static content. Read only method is here . 
 - Webapplication are the dynamic content . Read and write both are available .
 - Here we have process to process call .
@@ -32,8 +31,6 @@ It is the collection of the multiple individual system connected through a netwo
 - It is more in the distributed system as we use load balancer here . Load balancer reduce the request by distributing them with the other maching using round and robin .
 - It is less in MONOLthic .
 - CDN ,CACHING DISTIBUTED SYSTEM .
-
- 
 # Availability 
 - Monolothic have less availibilty. As the system go down the module go downs. 
 - Distibuted have more availibity as we have the replicaia here .
@@ -41,8 +38,6 @@ It is the collection of the multiple individual system connected through a netwo
 - To increas the avaialibity we can do replication of the server  ,ds,redundancy .
 - Replication include the redundancy but involves the copying of data from the one node to another or the syncrinization of state between node .
 - Redudancy is the duplication of nodes in case of some of them are failing .
-
-
 # Consistency 
 - When more then one client request the sytem for all such requests it will be called when each client gets the same data,The data should be always be consistent,regardless of who is accessing it form whereever ,The DB should update it as soon as possible .
 - The missmangement in the data is called dirty read .
@@ -70,24 +65,17 @@ It is the collection of the multiple individual system connected through a netwo
 
 # Scalabilty 
 - IF the number request increase then the whether your server is going to response properly or not .
--  Vertical Scaling - It is means the upgradation of  the same server by making the configuration better . Single point of failure of there . Easy to configure
-- Horizontal Scaling - It means that adding the new machine with the existing machine . Single point of failure is not there ,Secuity is tough .
-
-
-
-
-
+- `Vertical Scaling` - It is means the upgradation of  the same server by making the configuration better . Single point of failure of there . Easy to configure
+- `Horizontal Scaling` - It means that adding the new machine with the existing machine . Single point of failure is not there ,Secuity is tough .
 # Redundancy (copy krna)
 - It is simply duplication of the nodes or components so that when a node or componets fails then the duplicate node is available to service the customers .
 - Active redundancy is considered when each unit is operating /active and responding to the action . Multiple nodes are connnected to a load balance,and each unit recives an equal load .
 - Passive redundancy means that when one node is working and another one is not operational.
-
 # Replication 
 - redundancy+syncronization 
 - Active where every nodes is accepting the request 
 - Passive where every read write are done by the master .
 - 
-
 # Load Balancer 
 - It is the process of efficient distribution of network traffic accros all nodes in a distributed system .
 - VIP means virtual IP 
@@ -104,7 +92,6 @@ It is the collection of the multiple individual system connected through a netwo
 - Algorithm is left 
 
 # Caching 
-
 - It is fast and we use ram .
 - Reduce the Api call .
 - First we load the data from the DB then we define the caching .
@@ -113,13 +100,11 @@ It is the collection of the multiple individual system connected through a netwo
 - IN MEMOERY/LOCAL
 - DISTRIBUTED/IN HAND 
 - When the app is read extensive then apply the caching  .
-
 # Cache Eviction Strategies 
 - TTl time to live
 - Approx we give 4hr timing . As we miss this time  then we go to db to fetech the data ,
 - Deleting of the caching  is known as cache eviction .
 #  File based storage system
-
 - A file-based storage system is a databse sustem where data is stored in the form of files .
 - Challenges
  - Data Redundancy 
@@ -178,7 +163,6 @@ It is the collection of the multiple individual system connected through a netwo
  - Long Polling  -> clint request ,server keep it open until it give response.
  - Socket  -> Here we need frequent connection . Here we make two way  connection channel .
  - Server sent events Similiar to push .
-
 # Authentication vs Authorization 
  - Authentication  Who are you? LOgin cred
  -  Authorization   What can you do given permission .
@@ -193,10 +177,27 @@ It is the collection of the multiple individual system connected through a netwo
  - Forward 
  - Revers Proxy 
  - Instance means specofic occurance of the class or the object .
-
-
-
-
+# Microservice 
+- Always try to have bird eye view of the tech is blessing 
+- In this we divide the service as much as we have so that there is less interdependency between the service .
+- Here we built the right  feature for the right customer and this is not our job this is the job of the project manager .
+- What our job is 
+  - Available 
+  - Reliable 
+  - Need to nake change quickly to adapt 
+  - Faster inovation 
+- To achive all this we have the  microservice  which provide us 
+   - Maintainability 
+   - Modularity 
+   - Evolvality 
+   - Deployability 
+- But the reason to use microservice goes beyond this . FOr the high velocity teams .
+- The most important and most ignored thing in the tech is 
+  - Team Scalability   
+     - As team grow  need clear responsibilities/ KPIs
+     - As team grow need seperation of concern 
+     - And there are different lens of the the development of the programming .
+- Let suppose  in microservice we have the four differenct service like login  orders carts and products . And one of the service is down , this will not affect the entire website as our other service are up .
 
 
 

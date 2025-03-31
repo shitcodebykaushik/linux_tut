@@ -17,8 +17,6 @@ It is the terminal system tool
    - tags 
 
 - Git objects store is organized and implemented as storage system with the content addresses .
-
-
 - Commit 
   - It is like checkpoint.
   - Every commit is dependent on the previous commit .
@@ -40,7 +38,6 @@ It is the terminal system tool
   - This files keep the trace of Api keys and all other secreate key .
     - Use the gitignore generator to creat the file
     - cat .gitconfig this will give you the entire file.
-       
 - Branches
  -> Its an alternative timeline .
   Creating alternating timeline and working on it .
