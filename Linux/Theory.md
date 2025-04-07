@@ -928,3 +928,33 @@ There are more protocol over the internet for sharing the FTP.
 - `Home directory` Its symbol is [~] this is the sub-directory for the personal files and setting under the root directory owned by the individual user .
 - `rmdir` is remove the directory 
 - Use `&&` to run the second command only if the first command succed . 
+
+# Systemd 
+
+`which systemd` → no systemd in (...)
+This means the systemd binary is not in your $PATH.
+This is normal because systemd (the main process, PID 1) is typically located at /usr/lib/systemd/systemd, which is usually not in the default $PATH.
+`ps -p 1 -o comm= → systemd`
+This confirms that your system is using systemd as the init system (PID 1).
+So, systemd is running and managing your system services.
+Systemd is a modern init system (PID 1) and system management suite for Linux. It replaces traditional SysVinit and provides:
+Faster boot times (parallel service startup)
+Better dependency management
+Advanced logging (journald)
+Service monitoring & automatic restarts
+System state snapshots
+Dependency-based service control
+Support for containers, cgroups, and modern hardware .
+# How Systemd Works
+Boot Process
+Replaces traditional /etc/inittab and /etc/rc.d/ scripts.
+Uses "targets" (similar to runlevels) like graphical.target or multi-user.target.
+Service Management
+Services are defined in .service files (e.g., /usr/lib/systemd/system/nginx.service).
+Supports on-demand activation (socket-based services).
+Logging
+journald collects logs in a structured binary format (view with journalctl).
+Dependency Handling
+Starts services in parallel when possible (unlike SysVinit’s sequential startup 
+- `warp-svc` is the background system service (daemon) for Cloudflare WARP, a VPN-like service by Cloudflare that provides .
+
