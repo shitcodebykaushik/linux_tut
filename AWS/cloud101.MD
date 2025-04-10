@@ -1,6 +1,6 @@
 # Why
 - Its journey started from the year 1960 .
-- Through this this we can acces resource dynamically for agility and flexibility to meet customer needs .
+- Through this  we can acces resource dynamically for agility and flexibility to meet customer needs .
 - In this we pay as we go to test and use the system without being commited .
 -  Cloud computing is defined as the on demand delivery of IT resources over the internet with the pay as we go for pricing .
 -  Modern computing is based on the client-server model .
@@ -60,10 +60,22 @@
   - In Elasticity it adjust resouce to handle chages in demand .
   - Auto scaling means launces and terminates instances based on demand .
   - Load Balancer: Distributes incoming traffic across multiple instances.
+  ## Core command of the instance 
+  - `aws ec2 start-instances --instance-ids <instance-id>`
+  - `aws ec2 stop-instances --instance-ids <instance-id>`
+  - `aws ec2 describe-instances`
+  - `aws ec2 terminate-instances --instance-ids <instance-id>`
   # AWS S3
    - It means amazon simple storage service .
-   - Buckets are contianer for the data store in the S3 .
+   - Buckets are contianer for the data store in the S3 . sudo -u postgres psql
    - Dynamo DB is the key-value database service.It is serverless which means you do not have to provison,patch or manage servers .
+  ## Basic commands of the S3
+   - `aws s3 mb s3://<bucket-name>`
+   - `aws s3 ls`
+   - `aws s3 cp <file-path> s3://<bucket-name>/` This will upload the file .
+   - `aws s3 cp s3://<bucket-name>/<file-name> <local-path>` This will download this file 
+   - `aws s3 sync <local-path> s3://<bucket-name>/` This will sync the file .
+
   # AWS EC2 (Amazon elastic Compute cloud)
   - An instance refers to the virtual server in the cloud .
   - With EC2 we can congifgure and setup our os  uponf which our application will run .
@@ -79,8 +91,29 @@
    - 
   # AWS IAM (Identity and Access Management )
    - It let the user with the permission accros AWS.
+   - `IAM` stands for Identity and Access Management. It is a framework used to manage and control access to resources in a system. In the context of AWS (Amazon Web Services), IAM allows you to securely control who can access your AWS resources and what actions they can perform on those resources.
+   - `IAM` permissions and access controls are granted by AWS account administrators. These administrators have the authority to create and manage IAM users, groups, roles, and policies, and they can define what actions are allowed or denied for each identity (user, group, or role) within their AWS account.
+   - while AWS provides the IAM service, it is account administrators who grant and control IAM permissions within an AWS account. They define which users or roles can access which resources and what actions they can perform on those resources.
+## Core function of the IAM users 
+- Managing IAM Users
+Create and manage users: An IAM administrator is responsible for creating individual users within the AWS account. These users are given unique credentials (passwords or access keys) to authenticate and interact with AWS resources.
+Assigning permissions to users: Administrators assign appropriate permissions to users through IAM policies, either directly or by adding the user to an IAM group.
+Enabling Multi-Factor Authentication (MFA): To improve security, IAM administrators enable MFA for users, ensuring that access requires something they know (password) and something they have (MFA device).
+## Managing the IAM Groups 
+- Managing IAM Groups
+Create and manage groups: Administrators create IAM groups to organize users based on their roles or responsibilities, such as "Admins", "Developers", or "ReadOnly".
+Assign policies to groups: Instead of assigning permissions to individual users, administrators can assign policies to groups, making permission management easier and more scalable. 
+# Commands for the IAM users 
+- `aws iam list-users` this will list the users 
+- `aws iam create-user --user-name <username>` this will create the user .
+- `
   # AWS lambda 
    - It is a serverless computing service that is used to process snippets of code when a lambad function os triggered .
+    ## Common commands 
+    - `aws lambda list-functions` this will list the lambda function .
+    - `aws lambda invoke --function-name <function-name> output.txt` 
+    - `aws lambda create-function --function-name <function-name> --runtime <runtime> --role arn:aws:iam::aws:policy/service-role/<role-name> --handler <handler-name> --zip-file fileb://<file-path>` 
+    - `aws lambda delete-function --function-name <function-name>` 
   # AWS cloud watch 
    - It is use to monitor the stuff .
 # Understanding the concept of the vps 
@@ -178,3 +211,8 @@ If your website is small & local (few visitors, no international traffic) → NO
    - session cleanup is important for the post - termination step .
    - The connection termination process safegurad againsts unauthorized access and potential data leaks .
 # How DNS WORKS
+# Cloud watch
+- Commands 
+   - `aws cloudwatch describe-alarms`
+   - `aws cloudwatch put-metric-alarm --alarm-name <alarm-name> --metric-name <metric-name> --namespace <namespace> --statistic <statistic> --period <period> --threshold <threshold> --comparison-operator <comparison-operator> --evaluation-periods <evaluation-periods> --alarm-actions <arn-of-sns-topic>` 
+   - 
