@@ -685,3 +685,5 @@ In the context of web infrastructure .
 - Js is the interpreted language .
 - When pen-testing a web application, it is important to check whether the website uses internal or external JS. This can be easily verified by viewing the page's source code .
 - DNS is website query for the name of the website .
+- HTTP parsing refers to the process of reading and interpreting the data in an HTTP request or response, breaking it down into its constituent components, and understanding its structure according to the HTTP protocol.
+The HTTP protocol consists of various parts, and each part is made up of specific fields that must be parsed correctly in order to understand the communication between a client (usually a web browser) and a server. HTTP parsing is crucial for proper request handling, data interpretation, and error detection in web servers and clients.
