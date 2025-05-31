@@ -70,3 +70,5 @@
   - 
 - So far we have organised user and computers in OUs just for the sake of it ,but the main ideas behind this is to be able to deploy different policies for each OU.
 - Windows manges such policies through the group policies objects .
+
+- Using ubuntu from now onwards 
