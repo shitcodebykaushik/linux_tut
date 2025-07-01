@@ -198,7 +198,9 @@ It is the collection of the multiple individual system connected through a netwo
      - As team grow need seperation of concern 
      - And there are different lens of the the development of the programming .
 - Let suppose  in microservice we have the four differenct service like login  orders carts and products . And one of the service is down , this will not affect the entire website as our other service are up .
-
+- Microservice epmhaise on the database per service .
+# Bottelneck 
+- It is the method that restrict the overall throughput of the system espically in the monolothic .
 
 
 
