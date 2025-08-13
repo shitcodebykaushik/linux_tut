@@ -1,0 +1,14 @@
+# Process (Ps)
+- Process are the programm that are running on your machine. They are managed by the kernal and each process has the ID associated with it called process ID (PID). 
+- `ps` is the command which will list the following things 
+   - `PID` Process ID 
+   - `TTY` Controlling terminal with the process 
+   - `STAT` Process status code 
+   - `CMD` Name of executable/command
+   - `VSZ` Virtual  memory usuage of the entire process 
+   - `RSS` Resident set size,the non swapped physical memory 
+   - `ps a`  A display all running process including the one being ran by other users .
+   - `ps au` U shows more details about the user 
+   - `ps aux` X list all the process that dont have tty .
+ - A very sucess ful command to get the real time info is the `top` which list the real time info .
+ - 
