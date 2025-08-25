@@ -1,0 +1,22 @@
+# Kernal 
+- The kernal is the core of the operating system .
+- THe most basic level is the hardware this includes our CPU memory hard disk and networking ports etc .
+- The is the physical layer that actually computes what our machine is doing .
+- The next level is the kernal which handles process and mempry management,device communication, system call set up our filesystem etc. 
+- The kernal job is to talk to the hardware to make sute it does what we wnat our process to do .
+- And the level where user are familiar is know as the user space . The user space includes the shell the programms that you run ,the graphics etc ..
+- There are is abstraction betwwen user and kernal modes becus both of them operates in different different mode .
+   - In kernal mode kernal have access to the hardware,it control everything .
+   - In user space mode there is a very small amount of safe memeort and the CPU that you are allowed to access.
+   - x86 has the two main ring  Ring #0 is the privillege that the kernal run in . Ring#3 is the privillege that user mode applicaton run in .
+   - System call allow us to performa privileged instruction in kernal mode and then switch back to user mode .
+   - `uname -r` List the version of the kernal ,-r prints the release version .
+   - `sudo apt dist-upgarde` will update the kernal 
+   - Inside `/boot` vmlinux is the actual linux kernal .
+   - `config` have the kernal configuration 
+   - `System.map` have the symbolic lookup table .
+   - `initrd` is used for temporary file system . 
+
+- The kernel in itself is a monolithic piece of software. When we want to add support for a new type of keyboard, we don't write this code directly into the kernel code. Just as we wouldn't meld a bike rack to our car (well, maybe some people would do that). Kernel modules are pieces of code that can be loaded and unloaded into the kernel on demand. They allow us to extend the functionality of the kernel without actually adding to the core kernel code. We can also add modules and not have to reboot the system (in most cases). 
+- `lsmod` list the currently loaded modules 
+- `
