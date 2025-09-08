@@ -36,3 +36,44 @@
 - The root user home dir is loacated at the `/root` which is sub dir of the top-level  directory (/). Other regualar user account on the system have their home dir under the `/home` dir and the `/root` for the root user .
 -  `cd /` This will take you to the root dir .
 -  `sudo -i` This will start the interactive root for the root user .
+- With the byte manipulation happens in the ram .
+
+# Partitation 
+-  A partition is a logical division of a physical storage device, like a hard drive or SSD. Here each part is independent .
+- Different partitions can be formatted with different file systems, such as ext4 for your main Linux system and NTFS for a partition you want to share with Windows.
+- There are differernt types of partition table avaibale .
+  - A partition table is a data structure on a storage device (like a hard drive or SSD) that acts as a map, defining how the disk is divided into different partitions. It stores crucial information, such as the start and end of each partition, its size, and its type. The operating system reads this table to understand the disk's layout and access the data on each partition.
+  - `Master Boot Record (MBR)`: This is the older, traditional partitioning scheme. It has a limit of four primary partitions. To get more than four partitions, one of the primary partitions can be designated as an extended partition, which acts as a container for an unlimited number of logical partitions. MBR also has a size limitation of 2 terabytes.
+  - `GUID Partition Table (GPT)`: This is the modern standard that has largely replaced MBR. GPT supports up to 128 partitions by default and can handle disk sizes much larger than 2 terabytes. In the GPT scheme, there's no distinction between primary, extended, and logical partitions; all are simply considered "partitions .
+ - `Logical Division (Partition)`: This is a virtual or software-based separation of the physical device's storage space. The operating system treats each partition as a separate disk, even though they're all on the same physical device.
+ - sector is equivalent to the byte,512 byte is equal to one sector .
+ # ext4 system 
+ - This is the extension of the ext3 .
+ - It follows the jounralising for maintaing the log file .
+ - 
+ `lsblk -f`: This command is the most straightforward. It lists all block devices and includes the FSTYPE column, which shows the file system type .
+ `df -T`: This command shows the file system type for all currently mounted file systems.
+ `sudo blkid`: This command reads the metadata from a device to determine its file system type, UUID, and other information. 
+ # Block and inodes 
+ - In a Linux file system, blocks and inodes are fundamental concepts for storing and managing data. They work together to ensure files are organized and accessible.
+ - Block is bigger than a sector . one sector was indeed 512 bytes. This was the industry standard for hard disk drives (HDDs) for decades. However, the move to higher data density led to a new standard.
+   Today, most new hard drives and solid-state drives (SSDs) use 4096 bytes (4 KB) per sector, a standard known as Advanced Format (AF).
+ - The operating system and the hard drive controller can't read or write data smaller than a sector .
+# Building the filesystem 
+- In Ubuntu, file systems are built in a hierarchical, tree-like structure starting from a single root directory (/). Unlike Windows, which uses separate drives (like C:, D:, etc.), all storage devices and partitions in Linux are mounted as part of this single directory tree. This gives Linux a unified file system.
+- Think of the Linux file system as a single, large tree with the root directory (/) at its base. When you connect a device, like a USB drive or a hard disk partition, its files aren't automatically part of this tree. The mount command acts like a bridge, connecting the device's file system to a specific, empty directory on the main file system tree. This directory is called a mount point
+-The opposite process is unmounting, which disconnects the file system from its mount point using the umount command. It is important to unmount a device before physically removing it to prevent data corruption .
+- `umount` This is used to unmount the device . And you have to out of the dir to make the current device unmount .
+- The very first thing when we do partition is choose the format of the file sytem .
+
+
+
+
+
+
+
+
+
+
+
+
