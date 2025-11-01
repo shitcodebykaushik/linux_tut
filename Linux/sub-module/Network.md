@@ -13,3 +13,6 @@
 
 - `ip link set enp0s3 up` This is used  to up the interface we can down too .
 - `sudo !!` It means run the previous command with the sudo privileges .
+
+# Nmcli 
+- `nmcli dev wifi list`
