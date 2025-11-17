@@ -20,3 +20,25 @@
 
 
 - RPC is a request-response protocol . A RPC is initiated by the client which sends request message to known remote server to execute a specified procedure with the supplied parameters. The remote server sends a response to the client and the application continues its process ,the server is processing the call. The remote calls can fail because of unpredicatable network problems .
+
+# Clustered file system 
+- This is the file system which is shared by being simultaneously mounted on multiple servers .
+- Mounted on multiple server means many server can access the same shared filesystem at the same time as if it were part of their own local storage .
+- Mounted means attaching a storage device to your computers so you can use it  .`Mounted = connected and ready to use.` 
+
+# Shared-disk file system 
+- It uses  a storage area network to allow multiple computer to gain disk access at the block level(Physical level ) .
+
+# Distributed file system 
+- This does not share block level access to the same storage but uses a network protocol . These are commonly known as network file system,even though they are not the only file system that use the network to send data . 
+
+- Distributed computing is a field that studies distributed system,defined as computer system whose inter communication  componenets are located on different network computers .
+- In distributed system evenets represents a fact or state change (e.g orderplaced ) and are typically broadcast asynchronosly to multiple consumer,promoting loose coupling and scalability . 
+- While events dont expect an immediate response,acknowledgement mechanism are often implemented at the infrastructure level rather than being an inherent part of the event pattern itself .
+
+
+- `Event` = messsage saying something happend and they expect a reply. Delivery confirmation is done automatically by the messaging system nnot by you .
+
+- `Message` Means information sent from one system to another .
+
+-  Delivery patterns for both events and message include publish/subcribe (one to many ) and point to point  (one to one ) . While request.reply technically possible it is more commonly associated with the messaging patterns rather than pure event-driven system . EVents excel at state propagation and decoupled notification while message are better suited for command execution workflow orchestration and explicit coordination .Modern architectires commonly combine both approcaches,leveraging
