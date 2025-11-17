@@ -8,7 +8,7 @@
 
 
 # Cron job 
-- It is the standard time-based job scheduler on UNIX/Linux. A cron job is a scheduled task that cron daemon (crond) runs automaticallt at specified time or interval .
+- It is the standard time-based job scheduler on UNIX/Linux. A cron job is a scheduled task that cron daemon (crond) runs automaticallt at specified time or interval . In short it is time scheduling tool .
 - crond is the background service that reads crontab files and run jobs .
 - Each user can have crontab;there are also system crontab `(/etc/crontab)` and drop-ins .
 - A cron job is mechanism for automating repetitive task in Linux. Instead of running command mannualy cron allow us to schedule them to run automattically at specific time or interval .
@@ -16,6 +16,9 @@
 - 
 
 # ACL permission 
+- Access Control Lists let give moe fine-grained file and directory permissions than the standard owner/group other model .
+- Usefull when you need to grant different rightd to multiple user or groups without changing file owner or primary group .
+
 - There is ACL entry . 
 - GetFACL
 - SetFACL 
@@ -26,3 +29,6 @@
 - The centralized log store for system,kernal and service message on systemd based linux .
 - Reads logs produced by systemd,services kernal and many system .
 - Required root or membershio in the systemd-journal group for full access .
+
+# Rescue mode 
+
