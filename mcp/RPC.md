@@ -41,4 +41,4 @@
 
 - `Message` Means information sent from one system to another .
 
--  Delivery patterns for both events and message include publish/subcribe (one to many ) and point to point  (one to one ) . While request.reply technically possible it is more commonly associated with the messaging patterns rather than pure event-driven system . EVents excel at state propagation and decoupled notification while message are better suited for command execution workflow orchestration and explicit coordination .Modern architectires commonly combine both approcaches,leveraging
+-  Delivery patterns for both events and message include publish/subcribe (one to many ) and point to point  (one to one ) . While request.reply technically possible it is more commonly associated with the messaging patterns rather than pure event-driven system . EVents excel at state propagation and decoupled notification while message are better suited for command execution workflow orchestration and explicit coordination .Modern architectires commonly combine both approcaches,leveragin .
