@@ -128,4 +128,55 @@ SELECT STRUCT("Rudisha" as name, [23.4, 26.3, 26.4, 26.1] as splits) AS runner
 # Compute Engine 
 - It is a service provided by the gcp for the customizable virtual machine for running application , offers flexibility in choosing the flexibility in choosing the cpu and all .Use it for web hosting, data processing, machine learning, or migrating on-premises workloads.
 - Scripts are the peace of the code or instruction used to automate tasks .
-- 
+
+# VPC 
+- VPC is all about the networking . It is the virtual replacement for the physical routes.switches and cables you would need in a traditional data center .
+- Fundamentally it is netowrking construct .
+ ## Instance 
+  - IF the vpc is virtual network then the instance is the virtual server(the actual computers) running inside that network .
+  - The instance is the `compute Construct` It is the piece of softwate that emulates a physical computer . It has os vCpus and Ram  .
+
+- In the public internet ,you have no control over the ip address or routing . In VPC you are the network you are the network administrator
+- A Virtual Private Cloud (VPC) is a virtualized network that provides a secure and isolated environment for your resources in Google Cloud. It allows you to define and control how your resources communicate with each other and the internet. 
+- A VPC is a logically isolated network in Google Cloud.
+It spans all regions globally, meaning you can deploy resources in multiple regions while using the same VPC.
+It provides networking capabilities such as IP address management, routing, and firewall rules.
+- Isolation provided by the vpc is the first layer of the cloud security . As the resources are in the private space and we cotrol who goes in and who comes out .
+
+# Key componets in vpc 
+
+  - `Routes`
+    - Routes define how traffic flows within the VPC and outside it.
+      Every VPC has two default routes:
+      Default route to the internet: Allows outbound traffic to the internet.
+      Default route for internal traffic: Enables communication between resources within the VPC
+  - `Subnets` 
+    A subnet is a range of IP addresses within a VPC.
+    Subnets are regional, meaning they exist in a specific region.
+    You can create multiple subnets in a VPC, and each subnet can have its own IP range.
+    Subnets can be:
+    Auto mode: Automatically creates subnets in each region.
+    Custom mode: You manually define subnets and their IP ranges.
+  
+  - `Peering` 
+     - VPC peering allows you to connect two VPCs privately, enabling communication between them without using the public internet.
+  - `Shared VPC`
+     - A shared vpc allows multiple projects to share the same vpc network,enabling centralized network management .
+    
+  - `Internal traffic`
+     - Resiurces within the same vpc can communicate using internal ips
+     - External Traffic: Resources can communicate with the internet if they have external IPs and the appropriate firewall rules.
+     - Inter-VPC Traffic: Use VPC peering or VPN to connect multiple VPCs.
+
+# Tasking ssh in GCP to the local computes 
+- This comman
+   - `gcloud compute networks create troy --subnet-mode=custom ` 
+  - This create the `vpc`  in the  fcp 
+- Inside the vpc we create the instance and inside the instance there can be communication . But outside communication is not allowed until the firewal rule is invoked .
+
+- No We cant create an instane in a VPC without the subnet . 
+  - A subnet is a range of IP addresses within a `vpc` , When you create a VM instanve ,it need to be places in a specific subnet to assign it an IP address .
+
+  - Deleteing vpc 
+   - Before delete the vpc delete the all subnet associated with it .
+   -
